@@ -1,0 +1,14 @@
+main, .main {
+	
+  #main-view-container {
+
+    .block {
+      padding: 7% 0;
+
+      a { padding-top: 15%; }
+    }
+  }
+
+  @import 'video-view';
+  @import 'album-view';
+}

@@ -1,0 +1,19 @@
+.contact-view-container {
+	padding-top: 0;
+
+	#contact-container {
+		width: 90%;
+		padding: 80px;
+		margin: 0 5%;
+
+		.left-column {
+			float: left;
+			width: 60%;
+		}
+
+		.right-column {
+			float: right;
+			width: 40%;
+		}
+	}
+}

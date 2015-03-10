@@ -1,0 +1,64 @@
+[
+	{
+		"id"   : "0",
+		"title": "The Planner",
+		"year" : "2001",
+		"link" : "album/the-planner",
+		"slug" : "the-planner",
+		"image": "images/enigma.jpg",
+		"tracks": [
+	        "Jubana",
+	        "Must Funn",
+	        "Werdz Zwerdz",
+	        "Edit",
+	        "Trees Our Us",
+	        "We Festive",
+	        "Mind Over Matter",
+	        "ABCDEFG",
+	        "A Listening",
+	        "Row A Grotesque"
+    	],
+		"about": "Augue dolor tempor est diam sadipscing sadipscing justo in ipsum kasd vero accusam eu eu magna sit consequat eu. Ea sit diam te takimata et sit. Stet erat ut rebum vero et ipsum eirmod ut sea aliquyam ea. Vero nostrud minim blandit duo lorem et diam et ipsum. Magna et congue dolores at kasd magna et tation vel sanctus et dolor sit ipsum tation magna. Feugiat nonumy sanctus illum sea et aliquip consequat elitr nonumy accusam volutpat ipsum sed. Nonummy et accusam ut aliquyam sea sea sed dolor in at et. Et iusto wisi tation sit. Takimata rebum invidunt aliquam. Ut et sed duo elitr et consetetur ad ea dolore justo rebum nobis aliquam ut. Velit vel et eirmod dolores duo velit duo est elitr amet aliquyam. Ea nonumy elitr eos takimata sadipscing rebum et exerci dolores sit ex erat. Commodo magna mazim rebum eirmod dolore et magna luptatum nonumy diam dolor. Amet hendrerit rebum erat eirmod dolor eirmod lorem consetetur doming ea vel sed magna feugait. No labore takimata invidunt kasd elitr eirmod duis feugiat takimata minim est rebum sanctus dolor. Gubergren ut lorem elitr consetetur lorem no ipsum no."
+		
+	},	
+	{
+		"id"   : "1",
+		"title": "A Trip To The Moon",
+		"year" : "2003",
+		"link" : "album/a-trip-to-the-moon",
+		"slug" : "a-trip-to-the-moon",
+		"about": "Augue dolor tempor est diam sadipscing sadipscing justo in ipsum kasd vero accusam eu eu magna sit consequat eu. Ea sit diam te takimata et sit. Stet erat ut rebum vero et ipsum eirmod ut sea aliquyam ea. Vero nostrud minim blandit duo lorem et diam et ipsum. Magna et congue dolores at kasd magna et tation vel sanctus et dolor sit ipsum tation magna. Feugiat nonumy sanctus illum sea et aliquip consequat elitr nonumy accusam volutpat ipsum sed. Nonummy et accusam ut aliquyam sea sea sed dolor in at et. Et iusto wisi tation sit. Takimata rebum invidunt aliquam. Ut et sed duo elitr et consetetur ad ea dolore justo rebum nobis aliquam ut. Velit vel et eirmod dolores duo velit duo est elitr amet aliquyam. Ea nonumy elitr eos takimata sadipscing rebum et exerci dolores sit ex erat. Commodo magna mazim rebum eirmod dolore et magna luptatum nonumy diam dolor. Amet hendrerit rebum erat eirmod dolor eirmod lorem consetetur doming ea vel sed magna feugait. No labore takimata invidunt kasd elitr eirmod duis feugiat takimata minim est rebum sanctus dolor. Gubergren ut lorem elitr consetetur lorem no ipsum no."
+	},
+	{
+		"id"   : "2",
+		"title": "We Came and Saw",
+		"year" : "2001",
+		"link" : "album/we-came-and-saw",
+		"slug" : "we-came-and-saw",
+		"about": "Augue dolor tempor est diam sadipscing sadipscing justo in ipsum kasd vero accusam eu eu magna sit consequat eu. Ea sit diam te takimata et sit. Stet erat ut rebum vero et ipsum eirmod ut sea aliquyam ea. Vero nostrud minim blandit duo lorem et diam et ipsum. Magna et congue dolores at kasd magna et tation vel sanctus et dolor sit ipsum tation magna. Feugiat nonumy sanctus illum sea et aliquip consequat elitr nonumy accusam volutpat ipsum sed. Nonummy et accusam ut aliquyam sea sea sed dolor in at et. Et iusto wisi tation sit. Takimata rebum invidunt aliquam. Ut et sed duo elitr et consetetur ad ea dolore justo rebum nobis aliquam ut. Velit vel et eirmod dolores duo velit duo est elitr amet aliquyam. Ea nonumy elitr eos takimata sadipscing rebum et exerci dolores sit ex erat. Commodo magna mazim rebum eirmod dolore et magna luptatum nonumy diam dolor. Amet hendrerit rebum erat eirmod dolor eirmod lorem consetetur doming ea vel sed magna feugait. No labore takimata invidunt kasd elitr eirmod duis feugiat takimata minim est rebum sanctus dolor. Gubergren ut lorem elitr consetetur lorem no ipsum no."
+	},
+	{
+		"id"   : "3",
+		"title": "Align Ourselves",
+		"year" : "2008",
+		"link" : "album/align-ourselves",
+		"slug" : "align-ourselves",
+		"about": "Augue dolor tempor est diam sadipscing sadipscing justo in ipsum kasd vero accusam eu eu magna sit consequat eu. Ea sit diam te takimata et sit. Stet erat ut rebum vero et ipsum eirmod ut sea aliquyam ea. Vero nostrud minim blandit duo lorem et diam et ipsum. Magna et congue dolores at kasd magna et tation vel sanctus et dolor sit ipsum tation magna. Feugiat nonumy sanctus illum sea et aliquip consequat elitr nonumy accusam volutpat ipsum sed. Nonummy et accusam ut aliquyam sea sea sed dolor in at et. Et iusto wisi tation sit. Takimata rebum invidunt aliquam. Ut et sed duo elitr et consetetur ad ea dolore justo rebum nobis aliquam ut. Velit vel et eirmod dolores duo velit duo est elitr amet aliquyam. Ea nonumy elitr eos takimata sadipscing rebum et exerci dolores sit ex erat. Commodo magna mazim rebum eirmod dolore et magna luptatum nonumy diam dolor. Amet hendrerit rebum erat eirmod dolor eirmod lorem consetetur doming ea vel sed magna feugait. No labore takimata invidunt kasd elitr eirmod duis feugiat takimata minim est rebum sanctus dolor. Gubergren ut lorem elitr consetetur lorem no ipsum no."
+	},
+	{
+		"id"   : "4",
+		"title": "What About You?",
+		"year" : "2012",
+		"link" : "album/what-about-you",
+		"slug" : "what-about-you",
+		"about": "Augue dolor tempor est diam sadipscing sadipscing justo in ipsum kasd vero accusam eu eu magna sit consequat eu. Ea sit diam te takimata et sit. Stet erat ut rebum vero et ipsum eirmod ut sea aliquyam ea. Vero nostrud minim blandit duo lorem et diam et ipsum. Magna et congue dolores at kasd magna et tation vel sanctus et dolor sit ipsum tation magna. Feugiat nonumy sanctus illum sea et aliquip consequat elitr nonumy accusam volutpat ipsum sed. Nonummy et accusam ut aliquyam sea sea sed dolor in at et. Et iusto wisi tation sit. Takimata rebum invidunt aliquam. Ut et sed duo elitr et consetetur ad ea dolore justo rebum nobis aliquam ut. Velit vel et eirmod dolores duo velit duo est elitr amet aliquyam. Ea nonumy elitr eos takimata sadipscing rebum et exerci dolores sit ex erat. Commodo magna mazim rebum eirmod dolore et magna luptatum nonumy diam dolor. Amet hendrerit rebum erat eirmod dolor eirmod lorem consetetur doming ea vel sed magna feugait. No labore takimata invidunt kasd elitr eirmod duis feugiat takimata minim est rebum sanctus dolor. Gubergren ut lorem elitr consetetur lorem no ipsum no."
+	},
+	{
+		"id"   : "5",
+		"title": "Always Moving Forward",
+		"year" : "2015",
+		"link" : "album/always-moving-forward",
+		"slug" : "always-moving-forward",
+		"about": "Augue dolor tempor est diam sadipscing sadipscing justo in ipsum kasd vero accusam eu eu magna sit consequat eu. Ea sit diam te takimata et sit. Stet erat ut rebum vero et ipsum eirmod ut sea aliquyam ea. Vero nostrud minim blandit duo lorem et diam et ipsum. Magna et congue dolores at kasd magna et tation vel sanctus et dolor sit ipsum tation magna. Feugiat nonumy sanctus illum sea et aliquip consequat elitr nonumy accusam volutpat ipsum sed. Nonummy et accusam ut aliquyam sea sea sed dolor in at et. Et iusto wisi tation sit. Takimata rebum invidunt aliquam. Ut et sed duo elitr et consetetur ad ea dolore justo rebum nobis aliquam ut. Velit vel et eirmod dolores duo velit duo est elitr amet aliquyam. Ea nonumy elitr eos takimata sadipscing rebum et exerci dolores sit ex erat. Commodo magna mazim rebum eirmod dolore et magna luptatum nonumy diam dolor. Amet hendrerit rebum erat eirmod dolor eirmod lorem consetetur doming ea vel sed magna feugait. No labore takimata invidunt kasd elitr eirmod duis feugiat takimata minim est rebum sanctus dolor. Gubergren ut lorem elitr consetetur lorem no ipsum no."
+	}
+]

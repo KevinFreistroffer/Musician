@@ -1,0 +1,48 @@
+.tour-dates-view-container {
+
+	#tour-dates-container {
+		width: 100%;
+		min-height: 667px; /* for iPhone 6 plus ???*/
+		min-height: 100vh;
+		padding: 40px;
+		margin: 0 auto;
+		background-color: $container;
+
+		#mobile-tour-dates {
+			ul {
+
+				li {
+					padding: 10% 0;
+					font-size: 20px;
+
+					p {
+						line-height: 30px;
+					}
+				}
+			}
+		}
+		
+		table {
+			display: none;
+			width: 100%;
+
+			thead {
+		
+					th {
+						width: 33.333333%;
+						padding-bottom: 40px;
+						font-weight: bold;
+						font-size: 24px;
+						text-decoration: underline;
+					}
+			}
+
+			tbody {
+				tr {
+					td { padding: 20px 80px 20px 0; }
+				}
+			}
+		}
+		
+	}
+}

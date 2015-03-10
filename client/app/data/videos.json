@@ -1,0 +1,20 @@
+[
+	{
+		"id"   : "0",
+		"title": "Jubana",
+		"album": "The Planner",
+		"embed": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/eKgUEtWia_k\" frameborder=\"0\" allowfullscreen><\/iframe>"
+	},
+	{
+		"id"   : "1",
+		"title": "Mustt Funn",
+		"album": "The Planner",
+		"embed": "<iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/uiTtWnx_rjY\" frameborder=\"0\" allowfullscreen><\/iframe>"
+	},	
+	{
+		"id"   : "2",
+		"title": "Intro",
+		"album": "A Trip The Moon",
+		"embed": "<iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/DLw5b70OJH8\" frameborder=\"0\" allowfullscreen><\/iframe>"
+	}
+]

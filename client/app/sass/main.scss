@@ -1,0 +1,65 @@
+@import "compass";
+@import "reset";
+
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+@import 'variables';
+@import 'animations';
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// Default styles
+@import 'layouts/base/styles';
+
+/* Responsive: Portrait tablets and up. 500px+ */
+@media screen and (min-width: 500px) {
+  @import 'layouts/500/styles';
+}
+
+/* Responsive: Portrait tablets and up. 667px+ */
+@media screen and (min-width:667px) {
+  @import 'layouts/667/styles';
+}
+
+/* Responsive: Portrait tablets and up. 837px+ */
+@media screen and (min-width: 837px) {
+  @import 'layouts/837/styles';
+}
+
+/* Responsive: Portrait tablets and up. 900px+ */
+@media screen and (min-width: 900px) {
+  @import 'layouts/900/styles';
+}  
+
+/* Responsive: Portrait tablets and up. 1000px+ */
+@media screen and (min-width: 1000px) {
+  @import 'layouts/1000/styles';
+}
+
+/* Responsive: Portrait tablets and up. 1100px+ */
+@media screen and (min-width: 1100px) {
+  @import 'layouts/1100/styles';
+}
+
+/* Responsive: Portrait tablets and up. 1200px+ */
+@media screen and (min-width: 1200px) {
+  @import 'layouts/1200/styles';
+}
+
+
+
+///* Responsive: Portrait tablets and up. 737px+ */
+//@media screen and (min-width: 800px) {
+//  @import 'layouts/size800/styles800';
+//}
+
+

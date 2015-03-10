@@ -1,0 +1,45 @@
+    #main-view-container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    .block { 
+    	position: relative; 
+    	float: none;
+    	width: 85%;
+    	padding: 8% 0;
+        margin: 3% auto;
+    	font-family: 'Lato';
+    	font-size: 30px;
+    	font-variant: small-caps;
+    	text-align: center;
+    	background-color: rgba(250,250,250,0.7); 
+    	//border: 4px solid rgba(250,250,250,0.2);
+    	transition: all 0.1s linear;
+    	cursor: pointer; 
+
+		.fa {
+			display: none;
+			position: absolute;
+			top:35%; right: 0; bottom: 0; left: 0;
+			padding: 0; margin: 0;
+			font-size: 30px;
+			text-align: center;
+			color: rgba(250,250,250,0.8);
+			transition: all 0.1s linear;
+		}
+
+    	a {
+    		position: absolute;
+    		top: 0; right: 0; bottom: 0; left: 0;
+            padding-top: 10%;
+    		color: #000;
+    	}
+		
+		a:hover, a:visited, a:focus { text-decoration: none; }
+    	
+    }
+    
+    .block:hover { background-color: $activeMenu; transform: scale(1.05); }
+    .block:hover a { opacity: 0; }
+    .block:hover .fa { display: inline; }
+  }

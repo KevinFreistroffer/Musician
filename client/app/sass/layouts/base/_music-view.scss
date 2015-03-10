@@ -1,0 +1,146 @@
+.music-view-container {
+	.columns {
+		position: relative;
+		display: inline-block;
+		min-height: 500px;
+		transition: all 0.1s linear;
+	}
+
+	// hidden for mobile view
+	.left-column {
+		display: none;
+		float: left;
+		width: 25%;
+		padding: 20px 0;
+		margin: 0 1% 0 2%;
+		background-color: $container2;
+
+		h3 {
+			padding: 55px 0 8px 8%;
+			margin: 0;
+			font-size: 27px;
+			width: 80%;
+			margin: 0 auto; 
+			color: #fff;
+			border-bottom: 2px solid rgba(50,50,50,1);
+		}
+
+		h4 {
+			width: 100%;
+			padding: 55px 0 10px 0;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+		}
+
+		#albums {
+			width: 80%;
+			min-height: 300px;
+			padding: 20px 0;
+			margin: 0 10%;
+			border-bottom: 2px solid rgba(50,50,50,1);
+
+			li {
+				width: 100%;
+				margin: 10px 0;
+				font-family: Oswald, Lato, Tahoma, sans-serif;
+				letter-spacing: 1px;
+				line-height: 20px;
+				
+				a {
+					color: #fff;
+					transition: all 0.2s linear;
+				}
+
+				a:hover { 
+					color: $activeMenu; 
+					text-decoration: none; 
+				}
+
+				a:hover, a:visited, a:focus { text-decoration: none; }
+			}
+		}
+ 
+		p {
+			margin: 10px auto;
+			text-align: center;
+			
+			img {
+				width: 100px;
+				margin: 10px auto;  
+				text-align: center;
+			}
+		}
+	}
+
+// Right Column 
+
+	.right-column {
+		float: right;
+		width: 100%;
+		background-color: $container;
+		padding-bottom: 40px;
+		margin: 0 auto 1% 0;
+		
+		// [TODO] music view text-align right the 'RECENT TUNES'
+		h2 {
+			padding: 40px 0;
+			margin: 0;
+			font-size: 35px;
+			font-weight: bold;
+			text-align: center;
+			color: #333;
+			background-color: $container;
+		}
+
+		h4 {
+			padding: 80px 0 40px 0;
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+			color: #333;
+		}
+
+		p {
+			text-align: center;
+
+			img {
+				width: 200px;
+				margin: 5px auto;
+				text-align: center;
+			}
+		}
+
+		// DELETE THIS. WILL REPLACE IMG WITH ACTUAL soundcloud
+		img {
+			width: 90%;
+			margin: 20px 5%;
+			text-align: center;
+		}
+
+		#mobile-albums {
+			li {
+				padding: 10px 0;
+				text-align: center;
+
+				a {
+					padding: 10px 0;
+					font-size: 20px;
+					color: #222;
+				}
+			}
+
+			h4 {
+				font-size: 30px;
+				font-weight: bold;
+				color: #333;
+			}
+
+			p {
+				img {
+					width: 150px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+
+header, .header {
+
+	h1 {
+		float: left;
+		display: inline-block;
+		width: 21%;
+	}
+
+	#main-menu {
+		li {
+			padding: 0 1.5%;
+		}
+
+		li:first-child {
+			margin-left: 10%;
+		}
+	}
+}
+
+main, .main {
+	#main-view-container {
+
+		.block {
+			padding: 7% 0;
+
+			a { padding-top: 25%; }
+		}
+	}
+}
+
+/* ======================== 
+CHROME SPECIFIC 
+=========================*/
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}

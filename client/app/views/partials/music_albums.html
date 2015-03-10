@@ -1,0 +1,8 @@
+<ul id="albums">
+	<li data-ng-repeat="album in albums track by $index"
+	    class="albums">
+		<a href="#/album/{{album.slug}}"
+		   data-ng-click="getAlbumData(album.slug); setCurrentAlbum($index)"
+		   data-ng-class="{activeAlbum: currView === '/album/'+album.slug }">{{album.title}}</a>
+	</li>
+</ul>

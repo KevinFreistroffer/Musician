@@ -1,0 +1,110 @@
+.music-view-container {
+	display: block;
+	width: 100%; min-height: 100%;
+	padding-bottom: 80px;
+	// background-color: #333;
+ 
+	.columns {
+		position: relative;
+		display: inline-block;
+		min-height: 500px;
+		transition: all 0.1s linear;
+		box-shadow: 2px 2px 0 rgba(250,250,250,0.2);
+	}
+
+	.left-column {
+		display: block;
+		float: left;
+		width: 25%;
+		padding: 20px 0;
+		margin: 40px 1% 10px 2%;
+		background-color: $container2;
+
+		h3 {
+			padding: 55px 0 8px 8%;
+			margin: 0;
+			font-size: 27px;
+			width: 80%;
+			margin: 0 auto; 
+			color: #fff;
+			border-bottom: 2px solid rgba(50,50,50,1);
+		}
+
+		h4 {
+			width: 100%;
+			padding: 55px 0 10px 0;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+		}
+
+		#albums {
+			width: 80%;
+			min-height: 300px;
+			padding: 20px 0;
+			margin: 0 10%;
+			border-bottom: 2px solid rgba(50,50,50,1);
+
+			li {
+				width: 100%;
+				margin: 10px 0;
+				font-family: Oswald, Lato, Tahoma, sans-serif;
+				letter-spacing: 1px;
+				line-height: 20px;
+				
+				a {
+					color: #fff;
+					transition: all 0.2s linear;
+				}
+
+				a:hover { 
+					color: $activeMenu; 
+					text-decoration: none; 
+				}
+
+				a:hover, a:visited, a:focus { text-decoration: none; }
+			}
+		}
+ 
+		p {
+			margin: 10px auto;
+			text-align: center;
+			
+			img {
+				width: 100px;
+				margin: 10px auto;  
+				text-align: center;
+			}
+		}
+		
+	}
+
+// Right Column 
+
+	.right-column {
+		float: right;
+		width: 68%;
+		background-color: $container;
+		margin: 20px 2% 10px 1%;
+
+		// [TODO] music view text-align right the 'RECENT TUNES'
+		h2 {
+			padding: 40px 0 0 44%;
+			margin: 0;
+			font-size: 45px;
+			color: #111;
+			background-color: $container;
+		}
+
+		// DELETE THIS. WILL REPLACE IMG WITH ACTUAL soundcloud
+		img {
+			width: 100%;
+			margin: 20px auto;
+			text-align: center;
+		}
+
+		#mobile-albums {
+			display: none;
+		}
+	}
+}

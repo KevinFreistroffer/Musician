@@ -1,0 +1,26 @@
+#main-view-container {
+    height: 100%;
+    padding-top: 4%;
+	
+    .block {
+    	width: 28%;
+        padding: 8% 0;
+        margin: 2%;
+    	font-size: 37px;
+
+		.fa {
+			top:30%; right: 0; bottom: 0; left: 0;
+			padding: 0; margin: 0;
+			font-size: 60px;
+		}
+
+    	a { padding-top: 28%; }
+		
+		a:hover, a:visited, a:focus { text-decoration: none; }
+    	
+    }
+
+    .block:hover { background-color: $activeMenu; }
+    .block:hover a { opacity: 0; }
+    .block:hover .fa { display: inline; }
+  }

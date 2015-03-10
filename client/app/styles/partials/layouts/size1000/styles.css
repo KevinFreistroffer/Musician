@@ -1,0 +1,109 @@
+/* line 4, ../../../../sass/partials/layouts/size1000/styles.scss */
+header h1, .header h1 {
+  float: left;
+  display: inline-block;
+}
+/* line 10, ../../../../sass/partials/layouts/size1000/styles.scss */
+header #social-menu li:first-child, .header #social-menu li:first-child {
+  margin-left: 55%;
+}
+/* line 13, ../../../../sass/partials/layouts/size1000/styles.scss */
+header #main-menu, .header #main-menu {
+  width: 100%;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+/* line 18, ../../../../sass/partials/layouts/size1000/styles.scss */
+header #main-menu li, .header #main-menu li {
+  padding: 0 1.5%;
+  font-size: 22px;
+  font-weight: bold;
+}
+/* line 24, ../../../../sass/partials/layouts/size1000/styles.scss */
+header #main-menu li:first-child, .header #main-menu li:first-child {
+  margin-left: 12%;
+}
+
+/* line 31, ../../../../sass/partials/layouts/size1000/styles.scss */
+main #main-view-container, .main #main-view-container {
+  padding-top: 6%;
+}
+/* line 34, ../../../../sass/partials/layouts/size1000/styles.scss */
+main #main-view-container .block, .main #main-view-container .block {
+  padding: 6% 0;
+}
+/* line 3, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .left-column, .main #music-view-container .left-column {
+  width: 25%;
+  margin: 40px 1% 10px 2%;
+}
+/* line 7, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .left-column .curve-img, .main #music-view-container .left-column .curve-img {
+  position: absolute;
+  top: -4px;
+  width: 100%;
+}
+/* line 13, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .left-column h3, .main #music-view-container .left-column h3 {
+  padding: 55px 0 8px 8%;
+  margin: 0;
+  font-size: 27px;
+  margin: 0 auto;
+}
+/* line 20, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .left-column h4, .main #music-view-container .left-column h4 {
+  width: 100%;
+  font-size: 20px;
+}
+/* line 33, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .left-column p, .main #music-view-container .left-column p {
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 37, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .left-column p img, .main #music-view-container .left-column p img {
+  width: 100px;
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 46, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .right-column, .main #music-view-container .right-column {
+  float: right;
+  width: 68%;
+  margin: 60px 2% 10px 1%;
+  background-color: #ffffff;
+}
+/* line 52, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .right-column .curve-img, .main #music-view-container .right-column .curve-img {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: -70px;
+}
+/* line 59, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .right-column h2, .main #music-view-container .right-column h2 {
+  padding: 40px 0 0 55%;
+  margin: 0;
+  font-size: 45px;
+  color: #111;
+}
+/* line 67, ../../../../sass/partials/layouts/size1000/_music-view.scss */
+main #music-view-container .right-column img, .main #music-view-container .right-column img {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 51, ../../../../sass/partials/layouts/size1000/styles.scss */
+  header #main-menu li, .header #main-menu li {
+    float: left;
+    padding: 0 1.5%;
+    font-size: 24px;
+  }
+  /* line 57, ../../../../sass/partials/layouts/size1000/styles.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 10%;
+  }
+}

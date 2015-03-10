@@ -1,0 +1,23 @@
+Delete the AlbumCtrl controller if using the MusicCtrl works with loading album data.
+
+The getAlbumData fn in Music & Album ctrl's should be moved to a service. 
+
+Highlight the "Music" menu link when on albums.
+
+Find a common class to apply to all  music & pictures views. Like call it  something like 2 column
+or since both have the same layout. 2 columns. 
+
+music view text-align right the 'RECENT TUNES' instead of padding-left
+
+add a scroll to top button at bottom of every view. 
+~uses $location, $anchorScroll. idea is
+~call function on click. function uses $location.hash(idValue), then call $anchorScroll();
+
+
+not sure, but the pictures view. if there are lot of images, they would scroll down to an image, then have to scorll up to see the large image. migh be easier to do the layout of square images then show the image as amodal
+
+clean up the scss code. tons of reused code.
+
+add classes to all the titles such as "Recent Tunes" "Albums". so can style all at once
+
+videos-view. the .view-container isnt adding the 1% padding. used the video-view-container padding. figure out why the view-container didnt

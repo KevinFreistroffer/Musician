@@ -1,0 +1,17 @@
+    <div id="mobile-menu-layer" data-ng-controller="mobileMenuCtrl">
+      <ul> 
+        <li data-ng-repeat="menu in menuContent track by $index"
+            data-ng-click="closeMenu(); findCurrMenu($index)"
+            data-ng-class="{activeMenu: currView === '/' + menu.link}">
+          <i class="fa fa-{{menu.fa}}" data-ng-class="{activeMenu: currView === '/' + menu.link}"></i>
+          <a href="#/{{menu.link}}" data-ng-class="{activeMenu: currView === '/' + menu.link}">
+             {{menu.title}}
+          </a>
+        </li>
+        <li >
+          <form method="get" action="">
+            <input id="mobile-search" type="search" name="mobile-search" placeholder="Search" />
+          </form>
+        </li>
+      </ul>
+    </div>

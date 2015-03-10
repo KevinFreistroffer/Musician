@@ -1,0 +1,26 @@
+.video-view-container {
+	min-height: 100%;
+
+	.blocks {
+		float: left;
+		width: 40%;
+		height: 100%;
+		padding: 2% 2% 4% 2%;
+		margin: 1.5% 5%;
+		background-color: #ffffff;
+
+		.video {
+			margin: auto;
+			position: relative;
+			padding: 0 0 100% 0;
+
+			iframe {
+				position: absolute;
+				top: 4%; right: 0; bottom: 4%; left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		
+	}
+}

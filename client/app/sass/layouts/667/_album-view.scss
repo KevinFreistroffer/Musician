@@ -1,0 +1,30 @@
+.album-view-container {
+	.right-column {
+		#top {
+			.left {
+				width: 20%;
+			}
+
+			.middle {
+				width: 60%;
+
+				h2 {
+					font-size: 35px;
+				}
+			}
+
+			.right {
+				display: inline-block;
+				width: 20%;
+
+				ul {
+					li {
+						float: none;
+						width: 100%;
+						margin: 10px auto;
+					}
+				}
+			}
+		}
+	}
+}

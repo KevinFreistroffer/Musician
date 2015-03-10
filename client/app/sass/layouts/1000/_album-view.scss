@@ -1,0 +1,116 @@
+.album-view-container {
+
+	.left-column {
+		width: 25%;
+		padding: 20px 0;
+		margin: 40px 1% 10px 2%;
+		background-color: $container2;
+
+		h3 {
+			padding: 55px 0 8px 8%;
+			margin: 0;
+			font-size: 27px;
+			width: 80%;
+			margin: 0 auto; 
+		}
+
+		h4 {
+			width: 100%;
+			padding: 55px 0 10px 0;
+			font-size: 20px;
+			color: #fff;
+		}
+
+		#albums {
+			width: 80%;
+			min-height: 300px;
+			padding: 20px 0;
+			margin: 0 10%;
+			border-bottom: 2px solid rgba(50,50,50,1);
+
+			li {
+				width: 100%;
+				margin: 10px 0;
+				font-family: Oswald, Lato, Tahoma, sans-serif;
+				letter-spacing: 1px;
+				line-height: 20px;
+								
+
+				a:hover { 
+					color: $activeMenu;
+				}
+			}
+		}
+ 
+		p {
+			margin: 10px auto;
+			text-align: center;
+			
+			img {
+				width: 100px;
+				margin: 10px auto;  
+			}
+		}
+		
+	}
+
+// Right Column 
+
+	.right-column {
+		width: 68%;
+		background-color: $container;
+		margin: 20px 2% 10px 1%;
+		
+		h2 {
+			padding: 40px 0 0 4%;
+			font-size: 45px;
+		}
+
+
+	// Album image/title/itunes & amazon
+		#top {
+			display: block;
+			width: 100%;
+			height: auto;
+			padding: 20px 10px;
+
+			// 3 columns
+			.describes { float: left; }
+
+			.left {
+				width: 20%;
+
+				img {
+					width: 90%;
+					padding: 0;
+					margin: 0 5%;
+				}
+			}
+			.middle { 
+				width: 60%;
+
+				// album title
+				h2 {
+					padding: 0 0 0 4%;
+					margin: 0;
+					font-size: 40px;
+				}
+
+				// album year
+				h5 {
+					padding: 10px 0 10px 4%;	
+					font-size: 25px;
+				}
+			}
+			.right { width: 20%; }
+		}
+
+		#middle {
+			p {
+				width: 90%;
+				padding: 10px 0;
+				margin: 0 auto;
+			}
+		}
+	}
+}

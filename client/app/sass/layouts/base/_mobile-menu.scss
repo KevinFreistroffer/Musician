@@ -1,0 +1,124 @@
+#mobile-menu-layer {
+  position: absolute;
+  top: 0px; bottom: 0px; left: 0px;
+  z-index: 100;
+  width: 70%; 
+  height: 100%;
+  padding-top: 70px;
+  background-color: #111111;
+
+  .fa-close {
+    position: absolute;  
+    z-index: 1;
+    top: 15px;
+    right: 14%;
+    font-size: 30px;
+    color: #fff;
+    transition: all .1s linear;
+    cursor: pointer;
+  }
+
+  .fa-close:hover {
+    transform: scale(1.1);
+  }
+
+  ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    background-color: #11111;
+    
+    li {
+      position: relative;
+      width: 100%;
+      padding: 15px 0;
+      color: white;
+      font-size: 27px;
+      font-weight: 500;
+      font-variant: small-caps;
+      transition: all 0.1s linear;
+      border-bottom: 1px solid rgba(0,0,0,0.4);
+      box-shadow: 0 1px 0 rgba(250,250,250,0.2);
+
+      .fa {
+        width: 28%;
+        padding: 0 0 0 5%;
+        font-size: 26px;
+        text-align: center;
+        opacity: 1;
+      }
+
+      a { 
+        position: absolute; top: 0; right: 0; bottom: 0; left: 0; 
+        padding: 18px 0 0 30%;
+        width: 100%;
+        color: #fff;
+      }
+      a:hover {
+        text-decoration: none;
+        color: $activeMenu;
+      }
+      
+    }
+
+    li:last-child { 
+      // border-bottom: 1px solid rgba(250,250,250,0.4);
+      // box-shadow: 0 1px 0 rgba(250,250,250,0.2);
+      input {
+        width: 90%;
+        padding-left:  10px;
+        margin: 0 5%;
+        color: #111;
+        font-variant: normal;
+      }
+    }
+
+    .activeMenu {
+      color: $activeMenu;
+      opacity: 1;
+    }
+
+    li:hover { color: $activeMenu; }
+    li:hover > .fa { 
+      opacity: 1; 
+      color: $activeMenu; 
+    }
+  }
+
+  #social-menu {
+    padding-left: 3%;
+    margin-top: 50px;
+
+    li {
+      padding: 35px 0;
+      width: 35%;
+      margin: 4% auto;
+      text-align: center;
+      border: 2px solid rgba(250,250,250,0.4);
+      transition: all 0.1s linear;
+
+     a { 
+        width: 100%;
+        padding:  20px 0 0 0;
+        
+        .fa {
+          padding: 0;
+          margin: 0;
+        }
+     }
+     a:hover { color: #fff; }
+    }
+
+    li:hover { transform: scale(1.1); }
+
+    // facebook, twitter, instagram
+    #face { background-color: $facebook; }
+    #twit { background-color: $twitter; }
+    #insta { background-color: $instagram; }
+  }
+
+   
+
+  .empty-li:hover { background-color: #111; }    
+}

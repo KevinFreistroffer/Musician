@@ -1,0 +1,19 @@
+.pictures-view-container {
+	background-color: #fff;
+	margin: 1%;
+
+	ul {
+		
+
+		li {
+			float: left;
+			width: 50%;
+
+			img {
+				width: 100%;
+				max-width: 500px;
+				margin: auto;
+			}		
+		}
+	}
+}

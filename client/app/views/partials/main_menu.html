@@ -1,0 +1,13 @@
+
+<nav id="main-menu">
+  <ul>
+    <li data-ng-repeat="menu in menuContent track by $index"
+        data-ng-click="closeMenu(); findCurrMenu($index)"
+        data-ng-class="{activeMenu: currView.split('/')[1] === menu.link}">
+      <a  href="#/{{menu.link}}">
+        <i data-ng-show="$first" class="fa fa-home"></i>
+        <span data-ng-hide="$first">{{menu.title}}</span>
+      </a>
+    </li>
+  </ul>
+</nav>

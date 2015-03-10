@@ -1,0 +1,51 @@
+.bio-view-container {
+	
+	#bio {
+		width: 100%;
+		margin: auto;
+		padding: 40px;
+		background-color: $container;
+
+		h2 {
+			display: block;
+			text-align: center;
+			padding: 40px 0 40px 0;
+			font-size: 45px;
+		}
+
+		h4 {
+			padding: 0 0 40px 0;
+			text-align: left;
+			font-weight: bold;
+			font-size: 20px;
+			font-family: Lato, Oswald, Tahoma, sans-serif;
+		}
+
+		p {
+			margin: 40px 0;
+			line-height: 40px;
+			font-family: Lato;
+		}
+
+		#img1 {
+			display: none;
+			float: right;
+			width: 200px;
+			height: 200px;
+			margin: 40px 0 40px 40px;
+		}
+
+		#img2 {
+			display: none;
+			float: left;
+			width: 200px;
+			height: 200px;
+			margin: 40px 40px 40px 0;
+		}
+
+		#img3 {
+			width: 80%;
+			margin: 0 10%;
+		}
+	}
+}

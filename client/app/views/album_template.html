@@ -1,0 +1,70 @@
+<div class="album-view-container view-container">
+
+	<!-- Left Column (Albums) -->
+	<div class="columns left-column">
+		<h3>Albums</h3>
+			<div data-ng-include src="'views/partials/music_albums.html'"></div>
+		<h4>All albums found on...</h4>	
+		<p><img src="../images/amazon.jpg"></p>
+		<p><img src="../images/itunes-button.png"></p>
+		
+	</div>
+
+	<!-- Right Column (content) -->
+	<div class="columns right-column mobile">
+		<!-- Album title, year, itunes & amazon buttons -->
+		<section id="top">
+			<img data-ng-show="loading" style="position: absolute;top: 0; left: 0;" src="../images/ajax-loader.gif">
+			<div class="left describes">
+				<img src="{{albumData.image}}">
+			</div>
+			<div class="middle describes">
+				<h2>{{albumData.title}}</h2>
+				<h5>{{albumData.year}}</h5>
+			</div>
+			<div class="right describes">
+				<ul>
+					<li>
+						<img src="images/itunes-button.png">
+					</li>
+					<li>
+						<img src="images/amazon.jpg">
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<!-- Album description -->
+		<section id="middle">
+			<p>{{albumData.desc}}</p>
+			<div id="tracklisting">
+				<h3>Tracklisting:</h3>
+				<ul>
+					<li ng-repeat="track in tracks track by $index">{{$index + 1}}. {{track}}</li>
+				</ul>
+			</div>
+
+			<div id="songs">
+				<h3>Listen</h3>
+			</div>
+		</section>
+		
+		<section id="bottom">		
+			<!-- [TODO] REPLACE WITH ACTUAL soundcloud -->
+			<div>
+				<img src="../images/soundcloud.png">			
+			</div>
+			<div>
+				<img src="../images/soundcloud.png">			
+			</div>
+			<div>
+				<img src="../images/soundcloud.png">			
+			</div>
+		</section>
+
+		<div id="mobile-albums">
+			<h2>Albums</h2>
+			<div data-ng-include src="'views/partials/music_albums.html '"></div>
+		</div>
+	</div>
+</div>

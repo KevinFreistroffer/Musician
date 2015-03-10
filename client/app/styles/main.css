@@ -1,0 +1,2190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+/* line 6, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 13, ../sass/main.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 1, ../sass/layouts/base/_styles.scss */
+html {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../sass/layouts/base/_styles.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald', 'Lato','Source Sans Pro', 'Open Sans', Tahoma, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* line 14, ../sass/layouts/base/_styles.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+/* line 21, ../sass/layouts/base/_styles.scss */
+a, a:hover, a:visited, a:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+/* line 2, ../sass/layouts/base/structure/_header.scss */
+header, .header {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #111;
+  transition: all 0.2s linear;
+}
+/* line 15, ../sass/layouts/base/structure/_header.scss */
+header #header-top-row #search-form, .header #header-top-row #search-form {
+  display: none;
+}
+/* line 16, ../sass/layouts/base/structure/_header.scss */
+header #header-top-row .site-title, .header #header-top-row .site-title {
+  display: none;
+}
+/* line 19, ../sass/layouts/base/structure/_header.scss */
+header .curve-img, .header .curve-img {
+  display: none;
+}
+/* line 23, ../sass/layouts/base/structure/_header.scss */
+header h1, .header h1 {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 40px;
+  transition: all 0.1s linear;
+  font-variant: small-caps;
+}
+/* line 31, ../sass/layouts/base/structure/_header.scss */
+header h1 a, .header h1 a {
+  color: #222;
+  color: #00CCCC;
+}
+/* line 33, ../sass/layouts/base/structure/_header.scss */
+header h1 a:hover, header h1 a:visited, header h1 a:focus, .header h1 a:hover, .header h1 a:visited, .header h1 a:focus {
+  color: #222;
+  color: #00CCCC;
+  text-decoration: none;
+}
+/* line 39, ../sass/layouts/base/structure/_header.scss */
+header #social-menu, .header #social-menu {
+  display: none;
+}
+/* line 41, ../sass/layouts/base/structure/_header.scss */
+header .fa-bars, .header .fa-bars {
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 10%;
+  font-size: 40px;
+  color: #00CCCC;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+/* line 52, ../sass/layouts/base/structure/_header.scss */
+header .fa-bars:hover, .header .fa-bars:hover {
+  transform: scale(1.1);
+}
+
+/* line 1, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 70%;
+  height: 100%;
+  padding-top: 70px;
+  background-color: #111111;
+}
+/* line 10, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer .fa-close {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 14%;
+  font-size: 30px;
+  color: #fff;
+  transition: all .1s linear;
+  cursor: pointer;
+}
+/* line 21, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer .fa-close:hover {
+  transform: scale(1.1);
+}
+/* line 25, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  background-color: #11111;
+}
+/* line 32, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li {
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+  font-size: 27px;
+  font-weight: 500;
+  font-variant: small-caps;
+  transition: all 0.1s linear;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 0 rgba(250, 250, 250, 0.2);
+}
+/* line 44, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li .fa {
+  width: 28%;
+  padding: 0 0 0 5%;
+  font-size: 26px;
+  text-align: center;
+  opacity: 1;
+}
+/* line 52, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 18px 0 0 30%;
+  width: 100%;
+  color: #fff;
+}
+/* line 58, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li a:hover {
+  text-decoration: none;
+  color: #00CCCC;
+}
+/* line 68, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li:last-child input {
+  width: 90%;
+  padding-left: 10px;
+  margin: 0 5%;
+  color: #111;
+  font-variant: normal;
+}
+/* line 77, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul .activeMenu {
+  color: #00CCCC;
+  opacity: 1;
+}
+/* line 82, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li:hover {
+  color: #00CCCC;
+}
+/* line 83, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer ul li:hover > .fa {
+  opacity: 1;
+  color: #00CCCC;
+}
+/* line 89, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu {
+  padding-left: 3%;
+  margin-top: 50px;
+}
+/* line 93, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu li {
+  padding: 35px 0;
+  width: 35%;
+  margin: 4% auto;
+  text-align: center;
+  border: 2px solid rgba(250, 250, 250, 0.4);
+  transition: all 0.1s linear;
+}
+/* line 101, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu li a {
+  width: 100%;
+  padding: 20px 0 0 0;
+}
+/* line 105, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu li a .fa {
+  padding: 0;
+  margin: 0;
+}
+/* line 110, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu li a:hover {
+  color: #fff;
+}
+/* line 113, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu li:hover {
+  transform: scale(1.1);
+}
+/* line 116, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu #face {
+  background-color: #3b5998;
+}
+/* line 117, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu #twit {
+  background-color: #00aced;
+}
+/* line 118, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer #social-menu #insta {
+  background-color: #517fa4;
+}
+/* line 123, ../sass/layouts/base/_mobile-menu.scss */
+#mobile-menu-layer .empty-li:hover {
+  background-color: #111;
+}
+
+/* line 32, ../sass/layouts/base/_styles.scss */
+.activeMenu {
+  color: #00CCCC;
+  opacity: 1;
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 42, ../sass/layouts/base/_styles.scss */
+  #mobile-menu-layer ul li {
+    font-size: 28px;
+  }
+}
+/* line 48, ../sass/layouts/base/_styles.scss */
+#main-menu {
+  display: none;
+}
+
+/* line 51, ../sass/layouts/base/_styles.scss */
+.wrapper {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  color: #111;
+  transition: left 0.2s linear;
+  overflow-y: visible;
+}
+
+/* line 65, ../sass/layouts/base/_styles.scss */
+.showMenu {
+  left: 70%;
+}
+
+/* line 68, ../sass/layouts/base/_styles.scss */
+.view-container {
+  padding: 1%;
+}
+
+/* line 1, ../sass/layouts/base/structure/_main.scss */
+main {
+  background: url("../images/grass_bg.jpg") no-repeat center center fixed;
+  background-repeat: no-repeat;
+}
+
+/* line 6, ../sass/layouts/base/structure/_main.scss */
+main, .main {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  padding: 0 0 0px 0;
+  color: #333;
+  overflow: hidden;
+}
+/* line 1, ../sass/layouts/base/_main-view.scss */
+main #main-view-container, .main #main-view-container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+/* line 5, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block, .main #main-view-container .block {
+  position: relative;
+  float: none;
+  width: 85%;
+  padding: 8% 0;
+  margin: 3% auto;
+  font-family: 'Lato';
+  font-size: 30px;
+  font-variant: small-caps;
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.7);
+  transition: all 0.1s linear;
+  cursor: pointer;
+}
+/* line 20, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block .fa, .main #main-view-container .block .fa {
+  display: none;
+  position: absolute;
+  top: 35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.8);
+  transition: all 0.1s linear;
+}
+/* line 31, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block a, .main #main-view-container .block a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 10%;
+  color: #000;
+}
+/* line 38, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block a:hover, main #main-view-container .block a:visited, main #main-view-container .block a:focus, .main #main-view-container .block a:hover, .main #main-view-container .block a:visited, .main #main-view-container .block a:focus {
+  text-decoration: none;
+}
+/* line 42, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block:hover, .main #main-view-container .block:hover {
+  background-color: #00CCCC;
+  transform: scale(1.05);
+}
+/* line 43, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block:hover a, .main #main-view-container .block:hover a {
+  opacity: 0;
+}
+/* line 44, ../sass/layouts/base/_main-view.scss */
+main #main-view-container .block:hover .fa, .main #main-view-container .block:hover .fa {
+  display: inline;
+}
+/* line 2, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .columns, .main .music-view-container .columns {
+  position: relative;
+  display: inline-block;
+  min-height: 500px;
+  transition: all 0.1s linear;
+}
+/* line 10, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column, .main .music-view-container .left-column {
+  display: none;
+  float: left;
+  width: 25%;
+  padding: 20px 0;
+  margin: 0 1% 0 2%;
+  background-color: #222222;
+}
+/* line 18, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column h3, .main .music-view-container .left-column h3 {
+  padding: 55px 0 8px 8%;
+  margin: 0;
+  font-size: 27px;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  border-bottom: 2px solid #323232;
+}
+/* line 28, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column h4, .main .music-view-container .left-column h4 {
+  width: 100%;
+  padding: 55px 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+/* line 36, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column #albums, .main .music-view-container .left-column #albums {
+  width: 80%;
+  min-height: 300px;
+  padding: 20px 0;
+  margin: 0 10%;
+  border-bottom: 2px solid #323232;
+}
+/* line 43, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column #albums li, .main .music-view-container .left-column #albums li {
+  width: 100%;
+  margin: 10px 0;
+  font-family: Oswald, Lato, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+/* line 50, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column #albums li a, .main .music-view-container .left-column #albums li a {
+  color: #fff;
+  transition: all 0.2s linear;
+}
+/* line 55, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column #albums li a:hover, .main .music-view-container .left-column #albums li a:hover {
+  color: #00CCCC;
+  text-decoration: none;
+}
+/* line 60, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column #albums li a:hover, main .music-view-container .left-column #albums li a:visited, main .music-view-container .left-column #albums li a:focus, .main .music-view-container .left-column #albums li a:hover, .main .music-view-container .left-column #albums li a:visited, .main .music-view-container .left-column #albums li a:focus {
+  text-decoration: none;
+}
+/* line 64, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column p, .main .music-view-container .left-column p {
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 68, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .left-column p img, .main .music-view-container .left-column p img {
+  width: 100px;
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 78, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column, .main .music-view-container .right-column {
+  float: right;
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  margin: 0 auto 1% 0;
+}
+/* line 86, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column h2, .main .music-view-container .right-column h2 {
+  padding: 40px 0;
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  background-color: #ffffff;
+}
+/* line 96, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column h4, .main .music-view-container .right-column h4 {
+  padding: 80px 0 40px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+/* line 104, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column p, .main .music-view-container .right-column p {
+  text-align: center;
+}
+/* line 107, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column p img, .main .music-view-container .right-column p img {
+  width: 200px;
+  margin: 5px auto;
+  text-align: center;
+}
+/* line 115, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column img, .main .music-view-container .right-column img {
+  width: 90%;
+  margin: 20px 5%;
+  text-align: center;
+}
+/* line 122, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column #mobile-albums li, .main .music-view-container .right-column #mobile-albums li {
+  padding: 10px 0;
+  text-align: center;
+}
+/* line 126, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column #mobile-albums li a, .main .music-view-container .right-column #mobile-albums li a {
+  padding: 10px 0;
+  font-size: 20px;
+  color: #222;
+}
+/* line 133, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column #mobile-albums h4, .main .music-view-container .right-column #mobile-albums h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+/* line 140, ../sass/layouts/base/_music-view.scss */
+main .music-view-container .right-column #mobile-albums p img, .main .music-view-container .right-column #mobile-albums p img {
+  width: 150px;
+}
+
+/* line 1, ../sass/layouts/base/_album-view.scss */
+.album-view-container {
+  width: 100%;
+  min-height: 100%;
+  padding-top: 0;
+  /* end of .right-column */
+}
+/* line 5, ../sass/layouts/base/_album-view.scss */
+.album-view-container .columns {
+  position: relative;
+  display: inline-block;
+  min-height: 500px;
+  transition: all 0.1s linear;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 13, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column {
+  display: none;
+  float: left;
+  width: 25%;
+  padding: 20px 0;
+  margin: 40px 1% 10px 0;
+  background-color: #222222;
+}
+/* line 21, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column h3 {
+  padding: 55px 0 8px 8%;
+  margin: 0;
+  font-size: 27px;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  border-bottom: 2px solid #323232;
+}
+/* line 31, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column h4 {
+  width: 100%;
+  padding: 55px 0 10px 0;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+/* line 39, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column #albums {
+  width: 80%;
+  min-height: 300px;
+  padding: 20px 0;
+  margin: 0 10%;
+  border-bottom: 2px solid #323232;
+}
+/* line 46, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column #albums li {
+  width: 100%;
+  margin: 10px 0;
+  font-family: Oswald, Lato, Tahoma, sans-serif;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+/* line 52, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column #albums li .activeAlbum {
+  color: #00CCCC;
+}
+/* line 53, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column #albums li a {
+  color: #fff;
+  transition: all 0.2s linear;
+}
+/* line 58, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column #albums li a:hover {
+  color: #00CCCC;
+  text-decoration: none;
+}
+/* line 63, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column #albums li a:hover, .album-view-container .left-column #albums li a:visited, .album-view-container .left-column #albums li a:focus {
+  text-decoration: none;
+}
+/* line 67, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column p {
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 71, ../sass/layouts/base/_album-view.scss */
+.album-view-container .left-column p img {
+  width: 100px;
+  margin: 10px auto;
+  text-align: center;
+}
+/* line 80, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column {
+  float: right;
+  width: 100%;
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  margin: 1% auto;
+  /* end of #top */
+  /* end of #middle */
+  /* end of #bottom */
+}
+/* line 87, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column h2 {
+  padding: 40px 0 0 4%;
+  margin: 0;
+  font-size: 45px;
+  color: #111;
+  background-color: #ffffff;
+}
+/* line 96, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top {
+  display: block;
+  width: 100%;
+  height: 200px;
+  min-height: 200px;
+  padding: 20px 10px;
+}
+/* line 104, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .describes {
+  float: left;
+}
+/* line 106, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .left {
+  width: 30%;
+}
+/* line 109, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .left img {
+  width: 90%;
+  padding: 0;
+  margin: 0 5%;
+}
+/* line 115, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .middle {
+  width: 70%;
+}
+/* line 118, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .middle h2 {
+  padding: 0 2%;
+  margin: 0;
+  font-size: 25px;
+}
+/* line 125, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .middle h5 {
+  padding: 10px 0 10px 4%;
+  color: #444;
+}
+/* line 130, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .right {
+  display: block;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 136, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .right img {
+  width: 80%;
+  margin: 10px 5% 10px 15%;
+}
+/* line 141, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .right ul {
+  display: block;
+}
+/* line 144, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .right ul li {
+  float: left;
+  width: 45%;
+  margin: 0 2.5%;
+  text-align: center;
+}
+/* line 150, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #top .right ul li img {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 160, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #middle {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+/* line 165, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #middle p {
+  width: 90%;
+  padding: 10px 0;
+  margin: 0 auto;
+  font-family: 'Open Sans';
+  line-height: 35px;
+}
+/* line 173, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #middle #tracklisting, .album-view-container .right-column #middle #songs {
+  width: 90%;
+  padding-top: 40px;
+  margin: 10px auto;
+}
+/* line 178, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #middle #tracklisting h3, .album-view-container .right-column #middle #songs h3 {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0;
+}
+/* line 185, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #middle #tracklisting ul li, .album-view-container .right-column #middle #songs ul li {
+  padding: 3px 0;
+  font-family: 'Open Sans';
+}
+/* line 194, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #bottom {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+/* line 200, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #bottom img {
+  width: 90%;
+  margin: 20px 5%;
+}
+/* line 205, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #bottom img:first-child {
+  margin-top: 0;
+}
+/* line 210, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #mobile-albums {
+  width: 90%;
+  margin: 0 5%;
+}
+/* line 214, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #mobile-albums h2 {
+  padding: 40px 0 0 0;
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #222222;
+  background-color: #ffffff;
+}
+/* line 224, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #mobile-albums li {
+  padding: 10px 0;
+  font-family: "Open Sans";
+  text-align: center;
+}
+/* line 229, ../sass/layouts/base/_album-view.scss */
+.album-view-container .right-column #mobile-albums li a, .album-view-container .right-column #mobile-albums li a:visited, .album-view-container .right-column #mobile-albums li a:focus {
+  color: #222222;
+}
+
+/* end of .album-view-container */
+/* line 1, ../sass/layouts/base/_video-view.scss */
+.video-view-container {
+  min-height: 100%;
+  padding: 40px 0;
+  margin: 1%;
+  background-color: #ffffff;
+}
+/* line 7, ../sass/layouts/base/_video-view.scss */
+.video-view-container .blocks {
+  width: 80%;
+  height: 100%;
+  padding: 2% 2% 6% 2%;
+  margin: 3% 10%;
+  background-color: #ffffff;
+}
+/* line 14, ../sass/layouts/base/_video-view.scss */
+.video-view-container .blocks p {
+  padding-left: 4%;
+}
+/* line 18, ../sass/layouts/base/_video-view.scss */
+.video-view-container .blocks .video {
+  margin: auto;
+  position: relative;
+  padding: 0 0 100% 0;
+}
+/* line 23, ../sass/layouts/base/_video-view.scss */
+.video-view-container .blocks .video iframe {
+  position: absolute;
+  top: 4%;
+  right: 0;
+  bottom: 4%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container {
+  background-color: #fff;
+  margin: 1%;
+}
+/* line 5, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container h3 {
+  padding: 40px 0 20px 4%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #444;
+}
+/* line 15, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container ul li {
+  position: relative;
+  padding: 0;
+  margin: auto;
+  cursor: pointer;
+}
+/* line 21, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container ul li .cover {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+/* line 30, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container ul li .cover .fa {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  font-size: 40px;
+}
+/* line 38, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container ul li img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+/* line 44, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container ul li .modal-content, .pictures-view-container ul li .modal-header, .pictures-view-container ul li .modal-body, .pictures-view-container ul li .modal-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+/* line 50, ../sass/layouts/base/_pictures-view.scss */
+.pictures-view-container ul li:hover > .cover {
+  display: inline;
+}
+
+/* line 3, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio {
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+/* line 9, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio h2 {
+  display: block;
+  text-align: center;
+  padding: 40px 0 40px 0;
+  font-size: 45px;
+}
+/* line 16, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio h4 {
+  padding: 0 0 40px 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Lato, Oswald, Tahoma, sans-serif;
+}
+/* line 24, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio p {
+  margin: 40px 0;
+  line-height: 40px;
+  font-family: Lato;
+}
+/* line 30, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio #img1 {
+  display: none;
+  float: right;
+  width: 200px;
+  height: 200px;
+  margin: 40px 0 40px 40px;
+}
+/* line 38, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio #img2 {
+  display: none;
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 40px 40px 40px 0;
+}
+/* line 46, ../sass/layouts/base/_bio-view.scss */
+.bio-view-container #bio #img3 {
+  width: 80%;
+  margin: 0 10%;
+}
+
+/* line 3, ../sass/layouts/base/_tour-dates-view.scss */
+.tour-dates-view-container #tour-dates-container {
+  width: 100%;
+  min-height: 667px;
+  /* for iPhone 6 plus ???*/
+  min-height: 100vh;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+/* line 14, ../sass/layouts/base/_tour-dates-view.scss */
+.tour-dates-view-container #tour-dates-container #mobile-tour-dates ul li {
+  padding: 10% 0;
+  font-size: 20px;
+}
+/* line 18, ../sass/layouts/base/_tour-dates-view.scss */
+.tour-dates-view-container #tour-dates-container #mobile-tour-dates ul li p {
+  line-height: 30px;
+}
+/* line 25, ../sass/layouts/base/_tour-dates-view.scss */
+.tour-dates-view-container #tour-dates-container table {
+  display: none;
+  width: 100%;
+}
+/* line 31, ../sass/layouts/base/_tour-dates-view.scss */
+.tour-dates-view-container #tour-dates-container table thead th {
+  width: 33.333333%;
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: underline;
+}
+/* line 42, ../sass/layouts/base/_tour-dates-view.scss */
+.tour-dates-view-container #tour-dates-container table tbody tr td {
+  padding: 20px 80px 20px 0;
+}
+
+/* line 3, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container {
+  width: 100%;
+  padding: 40px 10px;
+  margin: auto;
+  background-color: #ffffff;
+}
+/* line 9, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container h3 {
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* line 16, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .left-column {
+  float: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+/* line 22, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .left-column #booking, .contact-view-container #contact-container .left-column #contact {
+  padding: 40px 0;
+  line-height: 30px;
+}
+/* line 27, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .left-column form input[type="submit"] {
+  background-color: #00CCCC;
+  color: #ffffff;
+}
+/* line 33, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column {
+  float: none;
+  display: inline-block;
+  width: 100%;
+}
+/* line 38, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu {
+  padding-top: 100px;
+  padding-left: 0;
+}
+/* line 42, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu li {
+  width: 70px;
+  padding: 20px;
+  margin: 7px auto;
+  font-size: 40px;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+/* line 50, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu li .fa {
+  color: #fff;
+}
+/* line 53, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu li:nth-child(1) {
+  background-color: #3b5998;
+}
+/* line 56, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu li:nth-child(2) {
+  background-color: #00aced;
+}
+/* line 59, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu li:nth-child(3) {
+  background-color: #517fa4;
+}
+/* line 63, ../sass/layouts/base/_contact-view.scss */
+.contact-view-container #contact-container .right-column #social-menu li:hover {
+  transform: scale(1.1);
+}
+
+/* line 1, ../sass/layouts/base/structure/_footer.scss */
+footer {
+  display: block;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Responsive: Portrait tablets and up. 500px+ */
+@media screen and (min-width: 500px) {
+  /* line 1, ../sass/layouts/500/_styles.scss */
+  #mobile-menu-layer {
+    width: 50%;
+  }
+  /* line 4, ../sass/layouts/500/_styles.scss */
+  #mobile-menu-layer .fa-close {
+    left: 80%;
+  }
+
+  /* line 9, ../sass/layouts/500/_styles.scss */
+  .showMenu {
+    left: 50%;
+  }
+
+  /* line 1, ../sass/layouts/500/_main-view.scss */
+  main #main-view-container, .main #main-view-container {
+    padding-top: 8%;
+    padding-left: 4%;
+  }
+  /* line 5, ../sass/layouts/500/_main-view.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    float: left;
+    width: 45%;
+    padding: 6% 0 12% 0;
+    margin: 1.5% 1.5%;
+    font-family: 'Lato';
+    font-size: 30px;
+  }
+  /* line 13, ../sass/layouts/500/_main-view.scss */
+  main #main-view-container .block .fa, .main #main-view-container .block .fa {
+    top: 33%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+  }
+  /* line 20, ../sass/layouts/500/_main-view.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 19%;
+  }
+  /* line 1, ../sass/layouts/500/_pictures-view.scss */
+  main .pictures-view-container, .main .pictures-view-container {
+    background-color: #fff;
+    margin: 1%;
+  }
+  /* line 8, ../sass/layouts/500/_pictures-view.scss */
+  main .pictures-view-container ul li, .main .pictures-view-container ul li {
+    float: left;
+    width: 50%;
+  }
+  /* line 12, ../sass/layouts/500/_pictures-view.scss */
+  main .pictures-view-container ul li img, .main .pictures-view-container ul li img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  /* line 3, ../sass/layouts/500/_tour-dates-view.scss */
+  main .tour-dates-view-container #mobile-tour-dates ul, .main .tour-dates-view-container #mobile-tour-dates ul {
+    width: 60%;
+    margin: 0 auto;
+  }
+  /* line 7, ../sass/layouts/500/_tour-dates-view.scss */
+  main .tour-dates-view-container #mobile-tour-dates ul li, .main .tour-dates-view-container #mobile-tour-dates ul li {
+    padding: 10% 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  /* line 12, ../sass/layouts/500/_tour-dates-view.scss */
+  main .tour-dates-view-container #mobile-tour-dates ul li p, .main .tour-dates-view-container #mobile-tour-dates ul li p {
+    line-height: 30px;
+  }
+}
+/* Responsive: Portrait tablets and up. 667px+ */
+@media screen and (min-width: 667px) {
+  /* line 5, ../sass/layouts/667/_styles.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    padding: 7% 0;
+  }
+  /* line 8, ../sass/layouts/667/_styles.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 15%;
+  }
+  /* line 3, ../sass/layouts/667/_video-view.scss */
+  main .video-view-container .video-container .blocks, .main .video-view-container .video-container .blocks {
+    float: left;
+    width: 40%;
+    margin: 10px 5%;
+  }
+  /* line 4, ../sass/layouts/667/_album-view.scss */
+  main .album-view-container .right-column #top .left, .main .album-view-container .right-column #top .left {
+    width: 20%;
+  }
+  /* line 8, ../sass/layouts/667/_album-view.scss */
+  main .album-view-container .right-column #top .middle, .main .album-view-container .right-column #top .middle {
+    width: 60%;
+  }
+  /* line 11, ../sass/layouts/667/_album-view.scss */
+  main .album-view-container .right-column #top .middle h2, .main .album-view-container .right-column #top .middle h2 {
+    font-size: 35px;
+  }
+  /* line 16, ../sass/layouts/667/_album-view.scss */
+  main .album-view-container .right-column #top .right, .main .album-view-container .right-column #top .right {
+    display: inline-block;
+    width: 20%;
+  }
+  /* line 21, ../sass/layouts/667/_album-view.scss */
+  main .album-view-container .right-column #top .right ul li, .main .album-view-container .right-column #top .right ul li {
+    float: none;
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+/* Responsive: Portrait tablets and up. 837px+ */
+@media screen and (min-width: 837px) {
+  /* line 1, ../sass/layouts/837/_styles.scss */
+  html, body {
+    background-color: #fff;
+  }
+
+  /* line 3, ../sass/layouts/837/_styles.scss */
+  #mobile-menu-layer {
+    width: 0;
+    overflow: hidden;
+  }
+
+  /* line 8, ../sass/layouts/837/_styles.scss */
+  .wrapper {
+    left: 0;
+  }
+
+  /* line 1, ../sass/layouts/837/structure/_header.scss */
+  header, .header {
+    position: relative;
+    z-index: 9999999;
+    left: 0;
+    height: 50px;
+  }
+  /* line 7, ../sass/layouts/837/structure/_header.scss */
+  header .fa-bars, .header .fa-bars {
+    display: none;
+  }
+  /* line 9, ../sass/layouts/837/structure/_header.scss */
+  header h1, .header h1 {
+    float: left;
+    display: inline-block;
+    width: 25%;
+    padding: 6px 0 0 40px;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 0;
+    font-weight: 100;
+  }
+  /* line 24, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu, .header #main-menu {
+    display: block;
+    width: 100%;
+    padding: 18px 0 0 0;
+    margin: 0;
+  }
+  /* line 30, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li, .header #main-menu li {
+    float: left;
+    padding: 0 1.5%;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+  }
+  /* line 38, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li a, .header #main-menu li a {
+    color: inherit;
+    transition: all 0.1s linear;
+  }
+  /* line 43, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li a:hover, .header #main-menu li a:hover {
+    color: #00CCCC;
+    text-decoration: none;
+  }
+  /* line 44, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li a:visited, header #main-menu li a:focus, .header #main-menu li a:visited, .header #main-menu li a:focus {
+    text-decoration: none;
+  }
+  /* line 47, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 7%;
+  }
+  /* line 53, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu, .header #social-menu {
+    display: block;
+    position: absolute;
+    right: 220px;
+    width: auto;
+    padding-top: 5px;
+  }
+  /* line 60, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu li, .header #social-menu li {
+    float: left;
+    width: 35px;
+    padding: 5px 0;
+    margin: 0 4px;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.2s linear;
+    opacity: 1;
+  }
+  /* line 70, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu li a, .header #social-menu li a {
+    color: #fff;
+  }
+  /* line 73, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu li:hover, .header #social-menu li:hover {
+    transform: scale(1.1);
+  }
+  /* line 78, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu #face, .header #social-menu #face {
+    background-color: #3b5998;
+  }
+  /* line 79, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu #twit, .header #social-menu #twit {
+    background-color: #00aced;
+  }
+  /* line 80, ../sass/layouts/837/structure/_header.scss */
+  header #social-menu #insta, .header #social-menu #insta {
+    background-color: #517fa4;
+  }
+
+  /* ======================== 
+  CHROME SPECIFIC 
+  =========================*/
+  /* saf3+, chrome1+ */
+}
+@media screen and (min-width: 837px) and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 94, ../sass/layouts/837/structure/_header.scss */
+  header #header-top-row #search-form input, .header #header-top-row #search-form input {
+    padding: 1px;
+  }
+  /* line 100, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li, .header #main-menu li {
+    float: left;
+    padding: 0 1.5%;
+    font-size: 18px;
+  }
+  /* line 106, ../sass/layouts/837/structure/_header.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 14%;
+  }
+}
+@media screen and (min-width: 837px) {
+  /* saf3+, chrome1+ */
+}
+@media screen and (min-width: 837px) and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 21, ../sass/layouts/837/_styles.scss */
+  header #main-menu li, .header #main-menu li {
+    float: left;
+    padding: 0 1.5%;
+    font-size: 23px;
+  }
+  /* line 27, ../sass/layouts/837/_styles.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 7%;
+  }
+}
+@media screen and (min-width: 837px) {
+  /* line 35, ../sass/layouts/837/_styles.scss */
+  .slideMenu {
+    left: 0;
+  }
+
+  /* line 39, ../sass/layouts/837/_styles.scss */
+  main, .main {
+    padding-top: 0;
+    margin-top: 10px;
+    min-height: 100%;
+    transition: all 0.1s linear;
+  }
+  /* line 1, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container, .main #main-view-container {
+    height: 100%;
+    padding-top: 4%;
+  }
+  /* line 5, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    width: 28%;
+    padding: 8% 0;
+    margin: 2%;
+    font-size: 37px;
+  }
+  /* line 11, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block .fa, .main #main-view-container .block .fa {
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+  }
+  /* line 17, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 28%;
+  }
+  /* line 19, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block a:hover, main #main-view-container .block a:visited, main #main-view-container .block a:focus, .main #main-view-container .block a:hover, .main #main-view-container .block a:visited, .main #main-view-container .block a:focus {
+    text-decoration: none;
+  }
+  /* line 23, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block:hover, .main #main-view-container .block:hover {
+    background-color: #00CCCC;
+  }
+  /* line 24, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block:hover a, .main #main-view-container .block:hover a {
+    opacity: 0;
+  }
+  /* line 25, ../sass/layouts/837/_main-view.scss */
+  main #main-view-container .block:hover .fa, .main #main-view-container .block:hover .fa {
+    display: inline;
+  }
+  /* line 1, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container, .main .music-view-container {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 80px;
+  }
+  /* line 7, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .columns, .main .music-view-container .columns {
+    position: relative;
+    display: inline-block;
+    min-height: 500px;
+    transition: all 0.1s linear;
+    box-shadow: 2px 2px 0 rgba(250, 250, 250, 0.2);
+  }
+  /* line 15, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column, .main .music-view-container .left-column {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 20px 0;
+    margin: 40px 1% 10px 2%;
+    background-color: #222222;
+  }
+  /* line 23, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column h3, .main .music-view-container .left-column h3 {
+    padding: 55px 0 8px 8%;
+    margin: 0;
+    font-size: 27px;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    border-bottom: 2px solid #323232;
+  }
+  /* line 33, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column h4, .main .music-view-container .left-column h4 {
+    width: 100%;
+    padding: 55px 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  /* line 41, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column #albums, .main .music-view-container .left-column #albums {
+    width: 80%;
+    min-height: 300px;
+    padding: 20px 0;
+    margin: 0 10%;
+    border-bottom: 2px solid #323232;
+  }
+  /* line 48, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column #albums li, .main .music-view-container .left-column #albums li {
+    width: 100%;
+    margin: 10px 0;
+    font-family: Oswald, Lato, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  /* line 55, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column #albums li a, .main .music-view-container .left-column #albums li a {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+  /* line 60, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column #albums li a:hover, .main .music-view-container .left-column #albums li a:hover {
+    color: #00CCCC;
+    text-decoration: none;
+  }
+  /* line 65, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column #albums li a:hover, main .music-view-container .left-column #albums li a:visited, main .music-view-container .left-column #albums li a:focus, .main .music-view-container .left-column #albums li a:hover, .main .music-view-container .left-column #albums li a:visited, .main .music-view-container .left-column #albums li a:focus {
+    text-decoration: none;
+  }
+  /* line 69, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column p, .main .music-view-container .left-column p {
+    margin: 10px auto;
+    text-align: center;
+  }
+  /* line 73, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .left-column p img, .main .music-view-container .left-column p img {
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  /* line 84, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .right-column, .main .music-view-container .right-column {
+    float: right;
+    width: 68%;
+    background-color: #ffffff;
+    margin: 20px 2% 10px 1%;
+  }
+  /* line 91, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .right-column h2, .main .music-view-container .right-column h2 {
+    padding: 40px 0 0 44%;
+    margin: 0;
+    font-size: 45px;
+    color: #111;
+    background-color: #ffffff;
+  }
+  /* line 100, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .right-column img, .main .music-view-container .right-column img {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  /* line 106, ../sass/layouts/837/_music-view.scss */
+  main .music-view-container .right-column #mobile-albums, .main .music-view-container .right-column #mobile-albums {
+    display: none;
+  }
+  /* line 1, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container, .main .album-view-container {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 80px;
+  }
+  /* line 8, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .columns, .main .album-view-container .columns {
+    position: relative;
+    display: inline-block;
+    min-height: 500px;
+    transition: all 0.1s linear;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+  /* line 16, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column, .main .album-view-container .left-column {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    padding: 20px 0;
+    margin: 40px 1% 10px 2%;
+    background-color: #222222;
+  }
+  /* line 24, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column h3, .main .album-view-container .left-column h3 {
+    padding: 55px 0 8px 8%;
+    margin: 0;
+    font-size: 27px;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    border-bottom: 2px solid #323232;
+  }
+  /* line 34, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column h4, .main .album-view-container .left-column h4 {
+    width: 100%;
+    padding: 55px 0 10px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  /* line 42, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column #albums, .main .album-view-container .left-column #albums {
+    width: 80%;
+    min-height: 300px;
+    padding: 20px 0;
+    margin: 0 10%;
+    border-bottom: 2px solid #323232;
+  }
+  /* line 49, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column #albums li, .main .album-view-container .left-column #albums li {
+    width: 100%;
+    margin: 10px 0;
+    font-family: Oswald, Lato, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  /* line 55, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column #albums li .activeAlbum, .main .album-view-container .left-column #albums li .activeAlbum {
+    color: #00CCCC;
+  }
+  /* line 56, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column #albums li a, .main .album-view-container .left-column #albums li a {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+  /* line 61, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column #albums li a:hover, .main .album-view-container .left-column #albums li a:hover {
+    color: #00CCCC;
+    text-decoration: none;
+  }
+  /* line 66, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column #albums li a:hover, main .album-view-container .left-column #albums li a:visited, main .album-view-container .left-column #albums li a:focus, .main .album-view-container .left-column #albums li a:hover, .main .album-view-container .left-column #albums li a:visited, .main .album-view-container .left-column #albums li a:focus {
+    text-decoration: none;
+  }
+  /* line 70, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column p, .main .album-view-container .left-column p {
+    margin: 10px auto;
+    text-align: center;
+  }
+  /* line 74, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .left-column p img, .main .album-view-container .left-column p img {
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  /* line 85, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column, .main .album-view-container .right-column {
+    float: right;
+    width: 68%;
+    background-color: #ffffff;
+    margin: 20px 2% 10px 1%;
+  }
+  /* line 91, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column .ajax-screen, .main .album-view-container .right-column .ajax-screen {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/ajax-loader.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* line 99, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column h2, .main .album-view-container .right-column h2 {
+    padding: 40px 0 0 4%;
+    margin: 0;
+    font-size: 45px;
+    color: #111;
+    background-color: #ffffff;
+  }
+  /* line 108, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #mobile-albums, .main .album-view-container .right-column #mobile-albums {
+    display: none;
+  }
+  /* line 114, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top, .main .album-view-container .right-column #top {
+    display: block;
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+    padding: 20px 10px;
+  }
+  /* line 122, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .describes, .main .album-view-container .right-column #top .describes {
+    float: left;
+  }
+  /* line 126, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .left, .main .album-view-container .right-column #top .left {
+    width: 25%;
+  }
+  /* line 129, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .left img, .main .album-view-container .right-column #top .left img {
+    width: 90%;
+    padding: 0;
+    margin: 0 5%;
+  }
+  /* line 135, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .middle, .main .album-view-container .right-column #top .middle {
+    width: 55%;
+  }
+  /* line 138, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .middle h2, .main .album-view-container .right-column #top .middle h2 {
+    padding: 0 2%;
+    margin: 0;
+    font-size: 30px;
+  }
+  /* line 145, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .middle h5, .main .album-view-container .right-column #top .middle h5 {
+    padding: 10px 0 10px 4%;
+  }
+  /* line 149, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .right, .main .album-view-container .right-column #top .right {
+    width: 20%;
+  }
+  /* line 152, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #top .right img, .main .album-view-container .right-column #top .right img {
+    width: 80%;
+    margin: 10px 5% 10px 15%;
+  }
+  /* line 159, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #middle, .main .album-view-container .right-column #middle {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  /* line 164, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #middle p, .main .album-view-container .right-column #middle p {
+    width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    line-height: 35px;
+  }
+  /* line 172, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #middle #tracklisting, main .album-view-container .right-column #middle #songs, .main .album-view-container .right-column #middle #tracklisting, .main .album-view-container .right-column #middle #songs {
+    width: 90%;
+    padding-top: 40px;
+    margin: 10px auto;
+  }
+  /* line 177, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #middle #tracklisting h3, main .album-view-container .right-column #middle #songs h3, .main .album-view-container .right-column #middle #tracklisting h3, .main .album-view-container .right-column #middle #songs h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  /* line 184, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container .right-column #middle #tracklisting ul li, main .album-view-container .right-column #middle #songs ul li, .main .album-view-container .right-column #middle #tracklisting ul li, .main .album-view-container .right-column #middle #songs ul li {
+    padding: 3px 0;
+    font-family: 'Open Sans';
+  }
+  /* line 194, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container #bottom, .main .album-view-container #bottom {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  /* line 200, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container #bottom img, .main .album-view-container #bottom img {
+    width: 90%;
+    margin: 20px 5%;
+  }
+  /* line 205, ../sass/layouts/837/_album-view.scss */
+  main .album-view-container #bottom img:first-child, .main .album-view-container #bottom img:first-child {
+    margin-top: 0;
+  }
+  /* line 1, ../sass/layouts/837/_video-view.scss */
+  main .video-view-container, .main .video-view-container {
+    min-height: 100%;
+  }
+  /* line 4, ../sass/layouts/837/_video-view.scss */
+  main .video-view-container .blocks, .main .video-view-container .blocks {
+    float: left;
+    width: 40%;
+    height: 100%;
+    padding: 2% 2% 4% 2%;
+    margin: 1.5% 5%;
+    background-color: #ffffff;
+  }
+  /* line 12, ../sass/layouts/837/_video-view.scss */
+  main .video-view-container .blocks .video, .main .video-view-container .blocks .video {
+    margin: auto;
+    position: relative;
+    padding: 0 0 100% 0;
+  }
+  /* line 17, ../sass/layouts/837/_video-view.scss */
+  main .video-view-container .blocks .video iframe, .main .video-view-container .blocks .video iframe {
+    position: absolute;
+    top: 4%;
+    right: 0;
+    bottom: 4%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 1, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container, .main .pictures-view-container {
+    background-color: #fff;
+    margin: 1%;
+  }
+  /* line 5, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container h3, .main .pictures-view-container h3 {
+    padding: 40px 0 20px 4%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #444;
+  }
+  /* line 15, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container ul li, .main .pictures-view-container ul li {
+    width: 33.333333333333%;
+    position: relative;
+    padding: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  /* line 22, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container ul li .cover, .main .pictures-view-container ul li .cover {
+    display: inline;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: all 0.2s linear;
+  }
+  /* line 31, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container ul li .cover .fa, .main .pictures-view-container ul li .cover .fa {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 40px;
+  }
+  /* line 39, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container ul li img, .main .pictures-view-container ul li img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  /* line 46, ../sass/layouts/837/_pictures-view.scss */
+  main .pictures-view-container ul li:hover > .cover, .main .pictures-view-container ul li:hover > .cover {
+    top: 0;
+  }
+  /* line 1, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container, .main .bio-view-container {
+    padding-top: 0;
+  }
+  /* line 4, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio, .main .bio-view-container #bio {
+    width: 90%;
+    margin: auto;
+    padding: 40px 80px;
+    background-color: #ffffff;
+  }
+  /* line 11, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio h2, .main .bio-view-container #bio h2 {
+    display: block;
+    text-align: right;
+    padding: 40px 5% 40px 0;
+    font-size: 45px;
+  }
+  /* line 18, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio h4, .main .bio-view-container #bio h4 {
+    padding: 70px 0 40px 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Lato, Oswald, Tahoma, sans-serif;
+  }
+  /* line 26, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio p, .main .bio-view-container #bio p {
+    margin: 40px 0;
+    line-height: 40px;
+    font-family: Lato;
+  }
+  /* line 32, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio #img1, .main .bio-view-container #bio #img1 {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 40px 0 40px 40px;
+  }
+  /* line 40, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio #img2, .main .bio-view-container #bio #img2 {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 40px 40px 40px 0;
+  }
+  /* line 48, ../sass/layouts/837/_bio-view.scss */
+  main .bio-view-container #bio #img3, .main .bio-view-container #bio #img3 {
+    width: 50%;
+    margin: 0 25%;
+  }
+  /* line 1, ../sass/layouts/837/_tour-dates-view.scss */
+  main .tour-dates-view-container, .main .tour-dates-view-container {
+    padding-top: 0;
+  }
+  /* line 6, ../sass/layouts/837/_tour-dates-view.scss */
+  main .tour-dates-view-container #tour-dates-container #mobile-tour-dates, .main .tour-dates-view-container #tour-dates-container #mobile-tour-dates {
+    display: none;
+  }
+  /* line 10, ../sass/layouts/837/_tour-dates-view.scss */
+  main .tour-dates-view-container #tour-dates-container table, .main .tour-dates-view-container #tour-dates-container table {
+    display: block;
+  }
+  /* line 1, ../sass/layouts/837/_contact-view.scss */
+  main .contact-view-container, .main .contact-view-container {
+    padding-top: 0;
+  }
+  /* line 4, ../sass/layouts/837/_contact-view.scss */
+  main .contact-view-container #contact-container, .main .contact-view-container #contact-container {
+    width: 90%;
+    padding: 80px;
+    margin: 0 5%;
+  }
+  /* line 9, ../sass/layouts/837/_contact-view.scss */
+  main .contact-view-container #contact-container .left-column, .main .contact-view-container #contact-container .left-column {
+    float: left;
+    width: 60%;
+  }
+  /* line 14, ../sass/layouts/837/_contact-view.scss */
+  main .contact-view-container #contact-container .right-column, .main .contact-view-container #contact-container .right-column {
+    float: right;
+    width: 40%;
+  }
+}
+/* Responsive: Portrait tablets and up. 900px+ */
+@media screen and (min-width: 900px) {
+  /* line 4, ../sass/layouts/900/_styles.scss */
+  header h1, .header h1 {
+    float: left;
+    display: inline-block;
+    width: 21%;
+  }
+  /* line 11, ../sass/layouts/900/_styles.scss */
+  header #main-menu li, .header #main-menu li {
+    padding: 0 1.5%;
+  }
+  /* line 15, ../sass/layouts/900/_styles.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 10%;
+  }
+
+  /* line 24, ../sass/layouts/900/_styles.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    padding: 7% 0;
+  }
+  /* line 27, ../sass/layouts/900/_styles.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 25%;
+  }
+
+  /* ======================== 
+  CHROME SPECIFIC 
+  =========================*/
+  /* saf3+, chrome1+ */
+}
+/* Responsive: Portrait tablets and up. 1000px+ */
+@media screen and (min-width: 1000px) {
+  /* line 4, ../sass/layouts/1000/_styles.scss */
+  header h1, .header h1 {
+    float: left;
+    display: inline-block;
+  }
+  /* line 9, ../sass/layouts/1000/_styles.scss */
+  header #main-menu, .header #main-menu {
+    width: 100%;
+    margin: 0;
+  }
+  /* line 14, ../sass/layouts/1000/_styles.scss */
+  header #main-menu li, .header #main-menu li {
+    padding: 0 1.5%;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  /* line 20, ../sass/layouts/1000/_styles.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 14%;
+  }
+
+  /* line 27, ../sass/layouts/1000/_styles.scss */
+  main #main-view-container, .main #main-view-container {
+    padding-left: 7%;
+  }
+  /* line 30, ../sass/layouts/1000/_styles.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    padding: 6% 0;
+    margin: 1.5%;
+  }
+  /* line 34, ../sass/layouts/1000/_styles.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 20%;
+  }
+  /* line 3, ../sass/layouts/1000/_music-view.scss */
+  main .music-view-container .right-column h2, .main .music-view-container .right-column h2 {
+    padding-top: 60px;
+    padding-left: 50%;
+    font-size: 55px;
+  }
+  /* line 3, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column, .main .album-view-container .left-column {
+    width: 25%;
+    padding: 20px 0;
+    margin: 40px 1% 10px 2%;
+    background-color: #222222;
+  }
+  /* line 9, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column h3, .main .album-view-container .left-column h3 {
+    padding: 55px 0 8px 8%;
+    margin: 0;
+    font-size: 27px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* line 17, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column h4, .main .album-view-container .left-column h4 {
+    width: 100%;
+    padding: 55px 0 10px 0;
+    font-size: 20px;
+    color: #fff;
+  }
+  /* line 24, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column #albums, .main .album-view-container .left-column #albums {
+    width: 80%;
+    min-height: 300px;
+    padding: 20px 0;
+    margin: 0 10%;
+    border-bottom: 2px solid #323232;
+  }
+  /* line 31, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column #albums li, .main .album-view-container .left-column #albums li {
+    width: 100%;
+    margin: 10px 0;
+    font-family: Oswald, Lato, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  /* line 39, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column #albums li a:hover, .main .album-view-container .left-column #albums li a:hover {
+    color: #00CCCC;
+  }
+  /* line 45, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column p, .main .album-view-container .left-column p {
+    margin: 10px auto;
+    text-align: center;
+  }
+  /* line 49, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .left-column p img, .main .album-view-container .left-column p img {
+    width: 100px;
+    margin: 10px auto;
+  }
+  /* line 59, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column, .main .album-view-container .right-column {
+    width: 68%;
+    background-color: #ffffff;
+    margin: 20px 2% 10px 1%;
+  }
+  /* line 64, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column h2, .main .album-view-container .right-column h2 {
+    padding: 40px 0 0 4%;
+    font-size: 45px;
+  }
+  /* line 71, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top, .main .album-view-container .right-column #top {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+  }
+  /* line 78, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .describes, .main .album-view-container .right-column #top .describes {
+    float: left;
+  }
+  /* line 80, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .left, .main .album-view-container .right-column #top .left {
+    width: 20%;
+  }
+  /* line 83, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .left img, .main .album-view-container .right-column #top .left img {
+    width: 90%;
+    padding: 0;
+    margin: 0 5%;
+  }
+  /* line 89, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .middle, .main .album-view-container .right-column #top .middle {
+    width: 60%;
+  }
+  /* line 93, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .middle h2, .main .album-view-container .right-column #top .middle h2 {
+    padding: 0 0 0 4%;
+    margin: 0;
+    font-size: 40px;
+  }
+  /* line 100, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .middle h5, .main .album-view-container .right-column #top .middle h5 {
+    padding: 10px 0 10px 4%;
+    font-size: 25px;
+  }
+  /* line 105, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #top .right, .main .album-view-container .right-column #top .right {
+    width: 20%;
+  }
+  /* line 109, ../sass/layouts/1000/_album-view.scss */
+  main .album-view-container .right-column #middle p, .main .album-view-container .right-column #middle p {
+    width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  /* line 2, ../sass/layouts/1000/_tour-dates-view.scss */
+  main .tour-dates-view-container #tour-dates-container, .main .tour-dates-view-container #tour-dates-container {
+    width: 90%;
+    padding: 80px;
+  }
+  /* line 3, ../sass/layouts/1000/_video-view.scss */
+  main .video-view-container .video-container .blocks, .main .video-view-container .video-container .blocks {
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+  /* line 1, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container, .main .pictures-view-container {
+    background-color: #fff;
+    margin: 1%;
+  }
+  /* line 5, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container h3, .main .pictures-view-container h3 {
+    padding: 40px 0 20px 4%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #444;
+  }
+  /* line 15, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container ul li, .main .pictures-view-container ul li {
+    width: 25%;
+    position: relative;
+    padding: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  /* line 22, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container ul li .cover, .main .pictures-view-container ul li .cover {
+    display: inline;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: all 0.2s linear;
+  }
+  /* line 31, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container ul li .cover .fa, .main .pictures-view-container ul li .cover .fa {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 40px;
+  }
+  /* line 39, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container ul li img, .main .pictures-view-container ul li img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  /* line 46, ../sass/layouts/1000/_pictures-view.scss */
+  main .pictures-view-container ul li:hover > .cover, .main .pictures-view-container ul li:hover > .cover {
+    top: 0;
+  }
+
+  /* saf3+, chrome1+ */
+}
+@media screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 54, ../sass/layouts/1000/_styles.scss */
+  header #main-menu li, .header #main-menu li {
+    float: left;
+    padding: 0 1.5%;
+    font-size: 24px;
+  }
+}
+/* Responsive: Portrait tablets and up. 1100px+ */
+@media screen and (min-width: 1100px) {
+  /* line 4, ../sass/layouts/1100/_styles.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 17%;
+  }
+
+  /* line 11, ../sass/layouts/1100/_styles.scss */
+  main #main-view-container, .main #main-view-container {
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+  /* line 15, ../sass/layouts/1100/_styles.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    width: 29%;
+    padding: 6% 0;
+    margin: 1%;
+  }
+  /* line 20, ../sass/layouts/1100/_styles.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 19%;
+  }
+}
+/* Responsive: Portrait tablets and up. 1200px+ */
+@media screen and (min-width: 1200px) {
+  /* line 3, ../sass/layouts/1200/_styles.scss */
+  header #main-menu li, .header #main-menu li {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  /* line 7, ../sass/layouts/1200/_styles.scss */
+  header #main-menu li:first-child, .header #main-menu li:first-child {
+    margin-left: 27%;
+  }
+
+  /* line 14, ../sass/layouts/1200/_styles.scss */
+  main #main-view-container, .main #main-view-container {
+    padding-top: 4%;
+  }
+  /* line 17, ../sass/layouts/1200/_styles.scss */
+  main #main-view-container .block, .main #main-view-container .block {
+    padding: 6% 0;
+  }
+  /* line 20, ../sass/layouts/1200/_styles.scss */
+  main #main-view-container .block a, .main #main-view-container .block a {
+    padding-top: 20%;
+  }
+  /* line 3, ../sass/layouts/1200/_music-view.scss */
+  main .music-view-container .right-column h2, .main .music-view-container .right-column h2 {
+    padding-top: 60px;
+    padding-left: 54%;
+    font-size: 60px;
+  }
+}

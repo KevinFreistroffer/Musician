@@ -1,0 +1,39 @@
+<div class="music-view-container view-container">
+
+	<!-- Left Column (Albums) -->
+	<div class="columns left-column">
+		<!-- <img class="curve-img" src="../images/left-column-curve.gif"> -->
+		<h3>ALBUMS</h3>
+			<div data-ng-include src="'views/partials/music_albums.html'"></div>
+		<h4>All albums found on...</h4>	
+		<p><img src="../images/amazon.jpg"></p>
+		<p><img src="../images/itunes-button.png"></p>
+		
+	</div>
+
+	<!-- Right Column (content) -->
+	<div class="columns right-column mobile">
+		<!-- <img class="curve-img" src="../images/right-column-curve.gif"> -->
+		<h2 ng-click="testAddData()">RECENT TUNES</h2>
+		<div class="">		
+			<!-- [TODO] REPLACE WITH ACTUAL soundcloud -->
+			<div style="width: 90%;margin: 40px 5%;">
+				<img src="../images/soundcloud.png">			
+			</div>
+			<div style="width: 90%;margin: 40px 5%;">
+				<img src="../images/soundcloud.png">			
+			</div>
+			<div style="width: 90%;margin: 40px 5%;">
+				<img src="../images/soundcloud.png">			
+			</div>
+		</div>
+
+		<div id="mobile-albums">
+			<h2>ALBUMS</h2>
+			<div data-ng-include src="'views/partials/music_albums.html '"></div>
+			<h4>All albums found on...</h4>	
+			<p><img src="../images/amazon.jpg"></p>
+			<p><img src="../images/itunes-button.png"></p>
+		</div>
+	</div>
+</div>

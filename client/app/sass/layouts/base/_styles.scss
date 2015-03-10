@@ -1,0 +1,82 @@
+html {
+  position: relative;
+  // top: 0px; right: 0px; bottom: 0px; left: 0px;
+  padding: 0; margin: 0;
+}
+
+body {
+  padding: 0; margin: 0;
+  font-family: 'Oswald', 'Lato','Source Sans Pro', 'Open Sans', Tahoma, Verdana, sans-serif;
+  overflow-x: hidden;
+  
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+// removes dotted border default to bootstrap
+a, a:hover, a:visited, a:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+// Header
+@import 'structure/header';
+
+// -- Mobile Menu ------------
+@import 'mobile-menu'; 
+
+.activeMenu {
+  color: $activeMenu;
+  opacity: 1;
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+#mobile-menu-layer {
+  ul {
+    li { font-size: 28px; }
+  }
+}
+
+}
+
+#main-menu { display: none; }
+
+// -- Site Wrapper (excludes mobile-menu) ------------
+.wrapper {
+  position: relative;
+  top: 0px; right: 0px; bottom: 0px; left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: #fff;
+  color: #111;  
+  transition: left 0.2s linear;
+  overflow-y: visible;
+}
+
+// Class that allows the .wrapper to slide which shows the mobile menu.
+.showMenu { left: 70%; }
+
+// affects all views
+.view-container {
+  padding: 1%;
+}
+
+// Main
+@import 'structure/main';
+@import 'album-view';
+@import 'video-view';
+@import 'pictures-view';
+@import 'bio-view';
+@import 'tour-dates-view';
+@import 'contact-view';
+
+// Footer
+@import 'structure/footer';

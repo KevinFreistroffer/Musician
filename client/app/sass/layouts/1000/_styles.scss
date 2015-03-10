@@ -1,0 +1,65 @@
+
+header, .header {
+
+	h1 {
+		float: left;
+		display: inline-block;
+	}
+
+	#main-menu {
+		width: 100%;
+		
+		margin: 0;
+	
+		li {
+			padding: 0 1.5%;
+			font-size: 22px;
+			font-weight: bold;
+		}
+
+		li:first-child {
+			margin-left: 14%;
+		}
+	}
+}
+
+main, .main {
+	#main-view-container {
+		padding-left: 7%;
+
+		.block {
+			padding: 6% 0;
+			margin: 1.5%;
+
+			a { padding-top: 20%; }
+		}
+	}
+
+	@import 'music-view';
+	@import 'album-view';
+	@import 'tour-dates-view';
+	@import 'video-view';
+	@import 'pictures-view';
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	header, .header {
+		
+		h1 {
+
+		}
+
+		#main-menu {	
+			li {
+				float: left;
+				padding: 0 1.5%;
+				font-size: 24px;
+			}
+
+			
+		}
+	}
+}
+
+

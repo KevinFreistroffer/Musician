@@ -1,0 +1,14 @@
+<div class="video-view-container view-container">
+	<div class="video-container">
+		<ul>
+			<li class="blocks" data-ng-repeat="video in videos track by $index">
+				<p>{{video.title}}</p>
+				<div class="video" data-ng-bind-html="safeYoutubeEmbed(video.embed)">
+					{{video.embed}}
+				</div>
+			</li>
+		</ul>
+		<div class="clearfix"></div>
+	</div>
+</div>
+

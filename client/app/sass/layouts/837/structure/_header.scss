@@ -1,0 +1,111 @@
+header, .header {
+	position: relative;
+	z-index: 9999999;
+	left: 0;
+	height: 50px;
+	
+	.fa-bars { display: none; }
+ 
+	h1 {
+		float: left;
+		display: inline-block;
+		width: 25%;
+		padding: 6px 0 0 40px;
+		margin: 0;
+		font-size: 40px;
+		letter-spacing: 0;
+		font-weight: 100;
+	
+	}
+
+
+	
+	// menu shown on all views except Home (main) View
+	#main-menu {
+		display: block;
+		width: 100%;
+		padding: 18px 0 0 0;
+		margin: 0;
+	
+		li {
+			float: left;
+			padding: 0 1.5%;
+			font-size: 19px;
+			font-weight: bold;
+			text-align: center;
+			font-variant: small-caps;
+
+			a {
+				color: inherit;
+				transition: all 0.1s linear;
+			}
+
+			a:hover { color: $activeMenu; text-decoration: none; }
+			a:visited, a:focus { text-decoration: none; }
+		}
+
+		li:first-child {
+			margin-left: 7%;
+		}
+	}
+
+	// social media icons
+	#social-menu { 
+		display: block;
+		position: absolute;
+		right: 220px;
+		width: auto;
+		padding-top: 5px;
+		
+		li {
+			float: left;
+			width: 35px;
+			padding: 5px 0;
+			margin: 0 4px;
+			font-size: 20px; 
+			text-align: center;
+			transition: all 0.2s linear;
+			opacity: 1;
+
+			a { color: #fff; }
+		}
+
+		li:hover { transform: scale(1.1); }
+
+		li:first-child { }
+
+		// facebook, twitter, instagram
+		#face { background-color: #3b5998; }
+		#twit { background-color: #00aced; }
+		#insta { background-color: #517fa4; }
+	}
+}
+
+/* ======================== 
+CHROME SPECIFIC 
+=========================*/
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	header, .header {
+	
+		#header-top-row {
+			#search-form {
+				input {
+					padding: 1px;	
+				}
+			}
+		}
+		#main-menu {	
+			li {
+				float: left;
+				padding: 0 1.5%;
+				font-size: 18px;
+			}
+
+			li:first-child {
+				margin-left: 14%;
+			}
+		}
+	}
+}

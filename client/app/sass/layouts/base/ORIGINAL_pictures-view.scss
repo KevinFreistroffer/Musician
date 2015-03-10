@@ -1,0 +1,128 @@
+.pictures-view-container {
+	width: 100%; min-height: 100%;
+	padding-bottom: 80px;
+
+	.columns {
+		position: relative;
+		display: inline-block;
+		min-height: 500px;
+		transition: all 0.1s linear;
+		box-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+		border: 4px solid #ffffff;
+	}
+
+// Left Column
+	.left-column {
+		float: left;
+		width: 25%;
+		padding: 20px 0;
+		margin: 20px 1% 10px 15%;
+		background-color: $container2;
+		
+
+		.curve-img {
+			position: absolute;
+			top: -4px;
+			width: 100%;
+		}
+
+		h3 {
+			padding: 55px 0 8px 8%;
+			margin: 0;
+			font-size: 27px;
+			width: 80%;
+			margin: 0 auto; 
+			color: #fff;
+			border-bottom: 2px solid rgba(50,50,50,1);
+		}
+
+		h4 {
+			width: 100%;
+			padding: 55px 0 10px 0;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+		}
+
+		ul {
+			width: 90%;
+			padding: 20px 0;
+			margin: 0 5%;
+
+			li {
+				float: left;
+				display: inline-block;
+				width: 45%;
+				margin: 10px 2.5%;
+				font-family: Oswald, Lato, Tahoma, sans-serif;
+				letter-spacing: 1px;
+				line-height: 20px;
+				
+				a { 
+					position: relative;
+					width: 100%;
+					padding-top: 20%;
+					
+
+					img {
+						position: absolute;
+						top: 0; right: 0; bottom: 0; left: 0;
+					}
+				}
+			}
+		}
+ 
+		p {
+			margin: 10px auto;
+			text-align: center;
+			
+			img {
+				width: 100px;
+				margin: 10px auto;  
+				text-align: center;
+			}
+		}
+		
+	}
+
+// Right Column 
+
+	.right-column {
+		width: 500px;
+		max-height: 500px;
+		background-color: $container;
+		margin: 20px auto;
+
+		h2 {
+			padding: 40px 0 0 48%;
+			margin: 0;
+			font-size: 45px;
+			color: #111;
+			background-color: $container;
+		}
+
+		img {
+			width: 100%;
+			margin: auto;
+			text-align: center;
+		}
+
+		#picture {
+			width: 100%;
+			max-height: 500px;
+			margin: auto;
+			overflow: hidden;
+			border: 4px solid #ffffff;
+
+			#container {
+				position: relative;
+				padding-top: 100%;
+
+				img {
+					position: absolute;
+					top: 0; right: 0; bottom: 0; left: 0;
+				}
+			}
+		}
+	}
+}

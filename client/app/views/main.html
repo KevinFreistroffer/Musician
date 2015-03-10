@@ -1,0 +1,19 @@
+<div id="main-view-container" class="page view-container">
+	<div id="block-menu">
+		<ul>
+			<li data-ng-show="!$first" 
+				data-ng-repeat="menu in menuContent track by $index"
+				class="block"
+				fade-in>
+				<h2>
+					<i class="fa fa-{{menu.fa}}"></i> <br />
+					<a href="#/{{menu.link}}">{{menu.title}}</a>
+				</h2>
+			</li>
+		</ul>
+	</div>
+
+	            <!-- <a class="twitter-timeline"  href="https://twitter.com/kevinfdev" data-widget-id="569002560636203008">Tweets by @kevinfdev</a>
+	                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+          
+</div>

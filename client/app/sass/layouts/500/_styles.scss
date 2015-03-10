@@ -1,0 +1,18 @@
+#mobile-menu-layer {
+	width: 50%;
+	
+	.fa-close {
+		left: 80%;
+	}
+}
+
+.showMenu {
+	left: 50%;
+}
+
+main, .main { 
+	@import 'main-view';
+	@import 'video-view';
+	@import 'pictures-view';
+	@import 'tour-dates-view';
+}

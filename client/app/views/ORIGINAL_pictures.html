@@ -1,0 +1,22 @@
+<div class="pictures-view-container view-container">
+
+	<!-- Left Column (Albums) -->
+	<div class="columns left-column">
+		<h3>Gallery</h3>
+		<ul>
+			<li class="thumbnail" 
+				data-ng-repeat="picture in pictures track by $index">
+				<img src="{{picture.src}}" data-ng-click="activeImage(picture.id)">
+			</li>
+		</ul>
+	</div>
+
+	<!-- Right Column (content) -->
+	<div class="columns right-column mobile">
+		<div id="picture">
+			<div id="container">
+				<img src="{{display}}">
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+.contact-view-container {
+
+	#contact-container {
+		width: 100%;
+		padding: 40px 10px;
+		margin: auto;
+		background-color: $container;
+
+		h3 {
+			padding-bottom: 40px;
+			font-size: 24px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		.left-column {
+			float: none;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+
+			#booking, #contact {
+				padding: 40px 0;
+				line-height: 30px;
+			}
+
+			form input[type="submit"] {
+				background-color: $primaryBlue;
+				color: #ffffff;
+			}
+		}
+
+		.right-column {
+			float: none;
+			display: inline-block;
+			width: 100%;
+
+			#social-menu {
+				padding-top: 100px;
+				padding-left: 0;
+
+				li {
+					width: 70px;
+					padding: 20px;
+					margin: 7px auto;
+					font-size: 40px;
+					text-align: center;
+					transition: all 0.2s linear;
+					
+					.fa { color: #fff; }
+				}
+
+				li:nth-child(1) {
+					background-color: $facebook;
+				}
+				li:nth-child(2) {
+					background-color: $twitter;
+				}
+				li:nth-child(3) {
+					background-color: $instagram;
+				}
+
+				li:hover { transform: scale(1.1); }
+			}
+		}
+	}
+}

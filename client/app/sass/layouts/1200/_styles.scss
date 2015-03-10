@@ -1,0 +1,25 @@
+  header, .header { 
+	#main-menu {
+		li {
+			padding-left: 1%;
+			padding-right: 1%; 
+		}
+		li:first-child {
+				margin-left: 27%;
+		}
+	}	
+  }
+
+main, .main {
+  #main-view-container {
+		padding-top: 4%;
+		
+    .block {
+      padding: 6% 0;
+
+      a { padding-top: 20%; }
+    }
+  }
+
+  @import 'music-view';
+}

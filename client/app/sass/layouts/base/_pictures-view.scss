@@ -1,0 +1,54 @@
+.pictures-view-container {
+	background-color: #fff;
+	margin: 1%;
+
+	h3 {
+		padding: 40px 0 20px 4%;
+		font-size: 30px;
+		font-weight: bold;
+		color: #444;
+	}
+
+	ul {
+		
+
+		li {
+			position: relative;
+			padding: 0;
+			margin: auto;
+			cursor: pointer;
+			
+			.cover {
+				display: none;
+				position: absolute;
+				top: 0; right: 0; bottom: 0; left: 0;
+				text-align: center;
+				background-color: rgba(0,0,0,0.4);
+				overflow: hidden;
+				transition: all 0.2s linear;
+
+				.fa {
+					position: absolute;
+					top: 40%; right: 0; bottom: 0; left: 0;
+					color: #fff;
+					font-size: 40px;
+				}
+			}
+
+			img {
+				width: 100%;
+				max-width: 500px;
+				margin: auto;
+			}
+
+			.modal-content, .modal-header, .modal-body, .modal-footer {
+				background-color: rgba(0,0,0,0.5);
+				border: none;
+			}		
+		}
+
+		li:hover > .cover {
+			display: inline;
+		}			
+	}
+}
