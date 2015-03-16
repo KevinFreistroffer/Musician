@@ -14,7 +14,7 @@ var config = require('./config');
 // Database Login
 var db = mongoose.connection;
 
-mongoose.connect('mongodb://admin:12Bs34Sd!@ds049161.mongolab.com:49161/artist');
+mongoose.connect('mongodb://YOUR_USERNAME:YOUR_PASSWORD@ds049161.mongolab.com:49161/artist');
 
 // connection object. connection.on, connection.once
 // db.on('error', function() {
